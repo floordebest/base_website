@@ -40,7 +40,7 @@ function goToLink() {
       />
       <MainCard
         title="WhatsApp"
-        description="+34 675 44 44 89"
+        description="+34 674 39 46 92"
         icon="whatsapp"
         @click="popUpStore.setClass('')"
       />

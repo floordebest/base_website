@@ -79,9 +79,8 @@ async function submit() {
           </p>
         </div>
         <p class="text-[16px] text-core-dark">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget ante iaculis,
-          vulputate erat et, rhoncus velit. Phasellus et malesuada libero. Quisque eget odio mattis,
-          placerat.
+          Feel free to contact us if you have any questions, or come and visit our gym and shop in
+          Javea Spain.
         </p>
         <div class="flex flex-row space-x-[10px]">
           <FontAwesomeIcon :icon="faMap" class="text-[30px] text-accent-1" />
@@ -103,7 +102,7 @@ async function submit() {
           <FontAwesomeIcon :icon="faMessageLines" class="text-[30px] text-accent-1" />
           <div class="flex flex-col">
             <p class="font-bold text-[14px] text-core-darkest">Whatsapp / Telephone</p>
-            <p class="text-[14px] text-core-dark">+34 675 44 44 89</p>
+            <p class="text-[14px] text-core-dark">+34 674 39 46 92</p>
           </div>
         </div>
       </div>
