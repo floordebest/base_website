@@ -18,7 +18,7 @@ const props = defineProps<{
 
 <template>
   <div
-    class="group relative py-[20px] xl:py-[50px] px-[10px] xl:px-[30px] bg-core-lightest overflow-hidden z-30 min-w-[150px] md:min-w-[200px] xl:w-[250px] h-[200px] xl:h-[350px] space-y-[16px] xl:space-y-[30px] hover:bg-accent-1"
+    class="group relative py-[20px] xl:py-[50px] px-[10px] xl:px-[30px] bg-core-lightest overflow-hidden z-30 min-w-[200px] xl:w-[250px] h-[220px] xl:h-[370px] space-y-[16px] xl:space-y-[30px] hover:bg-accent-1"
   >
     <FontAwesomeIcon
       :icon="faCalendarRange"

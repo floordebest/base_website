@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import { useLanguageStore } from '../../stores/languageStore'
 import MainCard from './MainCard.vue'
+
+const language = useLanguageStore()
 
 function goToLink() {
   window.open('https://www.basemma.com', '_blank')
@@ -18,14 +21,16 @@ function focusInput(link: string) {
     >
       <div class="absolute w-full max-w-[1680px] h:[400px] md:h-[600px] xl:h-[750px] object-cover">
         <video
-          src="/base_video.mp4"
-          type="video/mp4"
-          poster="/base_poster.png"
           muted
           loop
+          poster="/base_poster.png"
+          autobuffer
           autoplay
           class="w-full h-[400px] md:h-[600px] xl:h-[750px] object-cover"
-        />
+        >
+          <source src="/base_video.mp4" autoplay />
+          Your browser does not support the video tag.
+        </video>
         <img
           src="/overlay.png"
           alt=""
@@ -33,16 +38,16 @@ function focusInput(link: string) {
         />
       </div>
       <div
-        class="absolute top-[30%] xl:top-[20%] left-[10%] space-y-[10px] max-w-[60%] xl:max-w-[40%]"
+        class="absolute top-[30%] xl:top-[20%] left-[10%] space-y-[10px] max-w-[60%] xl:max-w-[50%]"
       >
         <p class="text-[14px] font-light text-core-lightest">THE BASE JAVEA</p>
         <p
           class="text-[20px] md:text-[30px] lg:text-[40px] xl:text-[60px] font-extrabold text-core-lightest"
         >
-          Gracie Jiu-Jitsu and Mixed Martial Arts Academy
+          {{ language.languageFile.mainTitle }}
         </p>
         <p class="hidden md:flex text-[18px] text-core-light md:max-w-[600px] lg:max-w-[800px]">
-          Master Jiu-Jitsu, Muay Thai, Kickboxing, Boxing and Self-Defence for every age and level.
+          {{ language.languageFile.mainSlogan }}
         </p>
       </div>
       <div
@@ -51,26 +56,26 @@ function focusInput(link: string) {
         <MainCard
           @click="focusInput('time')"
           icon="calendar"
-          title="Book a Class"
-          description="Join us for a class and learn from the best instructors."
+          :title="language.languageFile.bookAClassButton"
+          :description="language.languageFile.bookAClassTitle"
         />
         <MainCard
           @click="goToLink()"
           icon="bag"
-          title="Online Shop"
-          description="Find the best BJJ and MMA gear in our online shop."
+          :title="language.languageFile.shop"
+          :description="language.languageFile.shopTitle"
         />
         <MainCard
           @click="focusInput('private')"
           icon="private"
-          title="Personal Training"
-          description="Improve your skills with a private training session."
+          :title="language.languageFile.personalTraining"
+          :description="language.languageFile.personalTrainingTitle"
         />
         <MainCard
           @click="focusInput('activity')"
           icon="explore"
-          title="Explore Activities"
-          description="Explore our activities and find the perfect one for you."
+          :title="language.languageFile.exploreActivities"
+          :description="language.languageFile.exploreActivitiesTitle"
         />
       </div>
     </div>

@@ -6,6 +6,9 @@ import BottomCard from '../components/Home/BottomCard.vue'
 import { activities } from '../config'
 import TimeTable from '../components/TimeTable/TimeTable.vue'
 import SectionTitle from '../components/SectionTitle.vue'
+import { useLanguageStore } from '../stores/languageStore'
+
+const lang = useLanguageStore()
 </script>
 
 <template>
@@ -15,7 +18,7 @@ import SectionTitle from '../components/SectionTitle.vue'
     <div class="flex flex-col w-full space-y-[90px]">
       <div class="flex flex-col w-full">
         <div class="flex flex-col items-center w-full">
-          <SectionTitle title="Explore Activities" />
+          <SectionTitle :title="lang.languageFile.exploreActivities" />
         </div>
         <div
           id="activity"
@@ -26,31 +29,31 @@ import SectionTitle from '../components/SectionTitle.vue'
       </div>
       <HeroCard
         id="private"
-        :button="'Book a private training'"
+        :button="lang.languageFile.bookAPrivateTraining"
         :image="'/base_kickbocks.png'"
         :leader="true"
-        :title="'Personal Training'"
+        :title="lang.languageFile.personalTraining"
         :left="false"
-        :description="'Whether it is to learn Gracie Jiu-Jitsu, MMA, Self-Defence, get fit, work on your fighting skills and technique, build self-esteem and feel more confident or to prepare for a professional career, we adapt our private classes to you.'"
+        :description="lang.languageFile.privateClassesDescription"
       />
       <HeroCard
         id="about"
-        :button="'Contact Us'"
+        :button="lang.languageFile.contactUsButton"
         :image="'/team.png'"
         :leader="true"
-        :title="'About the Base'"
+        :title="lang.languageFile.about"
         :left="true"
-        :description="'The Base is a Gracie Jiu-Jitsu and MMA Academy that was founded in Melbourne Australia 10 years ago. After the founders Yas and Elias moved back to Europe, they opened their second school in Paris. We are now open in Javea in a brand new gym with Fuji mats, a shop, showers, weights area and drinks.'"
+        :description="lang.languageFile.aboutDescription"
       />
 
       <HeroCard
         :hasMap="true"
-        :button="'Contact Us'"
+        :button="lang.languageFile.contactUsButton"
         :image="''"
         :leader="true"
-        :title="'Come check us out!'"
+        :title="lang.languageFile.contactTitle"
         :left="false"
-        :description="'Our new gym is located near the Arenal area in Jávea. For google maps directions please use the address: Ctra. del Cap de la Nau Pla 121, Jávea. ​You will enjoy our beautiful facilities with free parking in the street, the best Fuji Smooth Mats, weight training area, changing rooms and showers, air conditionning and heating.'"
+        :description="lang.languageFile.contactDescription"
       />
       <div class="flex items-center justify-center" id="contact">
         <BottomCard />

@@ -4,8 +4,11 @@ import BottomMenu from './components/BottomMenu.vue'
 import { RouterView } from 'vue-router'
 import ContactForm from './components/ContactForm.vue'
 import { usePopUpStore } from './stores/popUpStore'
+import { useLanguageStore } from './stores/languageStore'
 
 const popUpStore = usePopUpStore()
+
+useLanguageStore().init()
 </script>
 
 <template>

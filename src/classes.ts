@@ -1,209 +1,211 @@
-export const classes = [
+// @ts-nocheck
+
+export const classes = (lang: Object) => [
   {
-    day: 'Lunes',
+    day: lang.monday,
     classes: [
       {
-        name: 'FitBoxing',
+        name: lang.fitBoxing,
         time: '09:30 - 10:30',
         color: 'class-purple'
       },
       {
-        name: 'No Class',
+        name: lang.noClass,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
       },
       {
-        name: 'No Class',
+        name: lang.noClass,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
       },
       {
-        name: 'Kids BJJ age 6-8',
+        name: lang.kidsBJJ6,
         time: '17:30 - 18:30',
         color: 'class-green'
       },
       {
-        name: 'Kids BJJ age 9-14',
+        name: lang.kidsBJJ9,
         time: '18:30 - 19:30',
         color: 'class-green'
       },
       {
-        name: 'BJJ',
+        name: lang.bjjShort,
         time: '19:30 - 21:00',
         color: 'class-grey'
       }
     ]
   },
   {
-    day: 'Martes',
+    day: lang.tuesday,
     classes: [
       {
-        name: 'Boxing',
+        name: lang.boxing,
         time: '09:30 - 10:30',
         color: 'class-blue'
       },
       {
-        name: 'BJJ',
+        name: lang.bjjShort,
         time: '12:30 - 14:00',
         color: 'class-grey'
       },
       {
-        name: 'No Class',
+        name: lang.noClass,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
       },
       {
-        name: 'Kids KickBoxing age 6-14',
+        name: lang.kidsKickBoxing,
         time: '17:30 - 18:30',
         color: 'class-red'
       },
       {
-        name: 'KickBoxing / Muay Thai',
+        name: lang.muayThaiActivity,
         time: '18:30 - 20:00',
         color: 'class-blue'
       },
       {
-        name: 'Coming Soon',
+        name: lang.comingSoon,
         time: '20:00 - 21:00',
         color: '#B8B8B8'
       }
     ]
   },
   {
-    day: 'Miercoles',
+    day: lang.wednesday,
     classes: [
       {
-        name: 'No-Gi Grappling',
+        name: lang.noGi,
         time: '09:30 - 10:30',
         color: 'class-grey'
       },
       {
-        name: 'No Class',
+        name: lang.noClass,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
       },
       {
-        name: 'No Class',
+        name: lang.noClass,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
       },
       {
-        name: 'Kids BJJ age 6-8',
+        name: lang.kidsBJJ6,
         time: '17:30 - 18:30',
         color: 'class-green'
       },
       {
-        name: 'Kids BJJ age 9-14',
+        name: lang.kidsBJJ9,
         time: '18:30 - 19:30',
         color: 'class-green'
       },
       {
-        name: 'No-Gi Grappling',
+        name: lang.noGi,
         time: '19:30 - 21:00',
         color: 'class-grey'
       }
     ]
   },
   {
-    day: 'Jueves',
+    day: lang.thursday,
     classes: [
       {
-        name: 'FitBoxing',
+        name: lang.fitBoxing,
         time: '09:30 - 10:30',
         color: 'class-purple'
       },
       {
-        name: 'BJJ',
+        name: lang.bjjShort,
         time: '12:30 - 14:00',
         color: 'class-grey'
       },
       {
-        name: 'No Class',
+        name: lang.noClass,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
       },
       {
-        name: 'Kids KickBoxing age 6-14',
+        name: lang.kidsKickBoxing,
         time: '17:30 - 18:30',
         color: 'class-red'
       },
       {
-        name: 'KickBoxing / Muay Thai',
+        name: lang.muayThaiActivity,
         time: '18:30 - 20:00',
         color: 'class-blue'
       },
       {
-        name: 'BJJ Fundamentals',
+        name: lang.bjjFundamentals,
         time: '20:00 - 21:00',
         color: 'class-grey'
       }
     ]
   },
   {
-    day: 'Viernes',
+    day: lang.friday,
     classes: [
       {
-        name: 'Boxing',
+        name: lang.boxing,
         time: '09:30 - 10:30',
         color: 'class-blue'
       },
       {
-        name: 'No Class',
+        name: lang.noClass,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
       },
       {
-        name: 'No Class',
+        name: lang.noClass,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
       },
       {
-        name: 'No Class',
+        name: lang.noClass,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
       },
       {
-        name: 'Wrestling',
+        name: lang.wrestling,
         time: '18:00 - 19:30',
         color: 'class-grey'
       },
       {
-        name: 'KickBoxing / Muay Thai',
+        name: lang.muayThaiActivity,
         time: '19:30 - 21:00',
         color: 'class-blue'
       }
     ]
   },
   {
-    day: 'Sabado',
+    day: lang.saturday,
     classes: [
       {
-        name: 'Open Mat (BJJ Members Only)',
+        name: lang.openMat,
         time: '09:30 - 11:00',
         color: 'class-grey'
       },
       {
-        name: 'Specific MMA',
+        name: lang.mmaActivity,
         time: '11:00 - 12:00',
         color: 'class-blue'
       },
       {
-        name: 'Kids No-Gi/Wrestling',
+        name: lang.kidsWrestling,
         time: '12:00 - 13:00',
         color: 'class-green'
       },
       {
-        name: 'No Class',
+        name: lang.noClass,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
       },
       {
-        name: 'No Class',
+        name: lang.noClass,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
       },
       {
-        name: 'No Class',
+        name: lang.noClass,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
       }

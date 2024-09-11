@@ -2,12 +2,16 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF'
+import { useLanguageStore } from '../stores/languageStore'
+
 const menuItems = [
   { name: 'Home', link: 'home' },
-  { name: 'Activities', link: 'activity' },
-  { name: 'About Us', link: 'about' },
-  { name: 'Contact', link: 'contact' }
+  { name: 'activities', link: 'activity' },
+  { name: 'aboutUs', link: 'about' },
+  { name: 'contact', link: 'contact' }
 ]
+
+const lang = useLanguageStore()
 
 function focusInput(link: string) {
   const element = document.getElementById(link)
@@ -34,7 +38,7 @@ function openFacebook() {
       <div id="menuItems" class="flex flex-row items-center w-full justify-evenly">
         <div v-for="item in menuItems" class="hidden lg:flex">
           <p @click="focusInput(item.link)" class="text-core-lightest text-[14px] font-bold">
-            {{ item.name }}
+            {{ item.name != 'Home' ? lang.languageFile[item.name] : 'Home' }}
           </p>
         </div>
         <div class="flex flex-row space-x-[20px]">
