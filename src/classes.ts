@@ -55,7 +55,7 @@ export const classes = (lang: Object) => [
         color: '#B8B8B8'
       },
       {
-        name: lang.kidsKickBoxing,
+        name: lang.kidsKickboxing,
         time: '17:30 - 18:30',
         color: 'class-red'
       },
@@ -125,7 +125,7 @@ export const classes = (lang: Object) => [
         color: '#B8B8B8'
       },
       {
-        name: lang.kidsKickBoxing,
+        name: lang.kidsKickboxing,
         time: '17:30 - 18:30',
         color: 'class-red'
       },
