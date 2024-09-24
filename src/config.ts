@@ -26,6 +26,11 @@ export const activities: Array<Activity> = [
     image: '/activities/kickboxing.png'
   },
   {
+    name: 'boxing',
+    description: 'boxingDescription',
+    image: '/activities/boxingClass.png'
+  },
+  {
     name: 'fitBoxing',
     description: 'fitBoxingDescription',
     image: '/activities/fitboxing.jpg'
