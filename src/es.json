@@ -66,5 +66,7 @@
   "contactSuccess": "Gracias por contactarnos, te responderemos muy pronto. No dudes en visitar nuestro gimnasio para echar un vistazo.",
   "contactNameError": "El nombre debe tener al menos 3 caracteres.",
   "contactEmailError": "Dirección de correo electrónico no válida.",
-  "contactSending": "Intentando enviar tu mensaje, por favor espera un momento..."
+  "contactSending": "Intentando enviar tu mensaje, por favor espera un momento...",
+  "prices": "Nuestros Precios",
+  "pricesDescription": "Ofrecemos una variedad de membresías y paquetes de clases para adaptarse a tus necesidades. Ya sea que estés buscando una clase suelta o una membresía mensual, tenemos algo para todos. Haz clic en la imagen para agrandarla o contáctanos para más información."
 }

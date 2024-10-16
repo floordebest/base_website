@@ -66,5 +66,7 @@
   "contactSuccess": "Merci de nous avoir contactés, nous vous répondrons très bientôt. N'hésitez pas à venir visiter notre salle de sport pour jeter un œil.",
   "contactNameError": "Le nom doit contenir au moins 3 caractères",
   "contactEmailError": "Adresse e-mail invalide",
-  "contactSending": "Nous essayons de livrer votre message, veuillez patienter un instant..."
+  "contactSending": "Nous essayons de livrer votre message, veuillez patienter un instant...",
+  "prices": "Nos Tarifs",
+  "pricesDescription": "Nous proposons une variété d'abonnements et de forfaits de cours adaptés à vos besoins. Que vous recherchiez une séance unique ou un abonnement mensuel, nous avons une offre pour chacun. Cliquez sur l'image pour l'agrandir ou contactez-nous pour plus d'informations."
 }

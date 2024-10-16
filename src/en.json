@@ -66,5 +66,7 @@
   "contactSuccess": "Thank you for reaching out, we will be contacting you very soon. Feel free to come and visit our gym to have a look",
   "contactNameError": "Name must be at least 3 characters",
   "contactEmailError": "Invalid email address",
-  "contactSending": "Trying to deliver your message, please wait a second..."
+  "contactSending": "Trying to deliver your message, please wait a second...",
+  "prices": "Our Prices",
+  "pricesDescription": "We offer a variety of memberships and class packages to suit your needs. Whether you're looking for a one-time drop-in class or a monthly membership, we have something for everyone. Click on the image to enlarge or contact us for more information."
 }

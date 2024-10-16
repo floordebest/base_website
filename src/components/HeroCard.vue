@@ -13,6 +13,11 @@ const props = defineProps<{
   button: string
   hasMap?: boolean
 }>()
+
+function openInNewWindow(url: string) {
+  console.log('click')
+  window.open(url, '_blank')
+}
 </script>
 
 <template>
@@ -42,10 +47,12 @@ const props = defineProps<{
       </div>
       <div class="md:hidden flex relative bg-accent-1 w-[300px] h-[300px]">
         <img
+          @click="image === '/prices.png' ? openInNewWindow(props.image) : null"
           v-if="!props.hasMap"
           :src="props.image"
           alt="base team"
           class="absolute top-[-10px] left-[-10px] w-[300px] h-[300px]"
+          :class="image === '/prices.png' ? 'object-cover object-top' : null"
         />
         <iframe
           v-else
@@ -69,6 +76,7 @@ const props = defineProps<{
     </div>
     <div
       v-if="!props.left"
+      @click="image === '/prices.png' ? openInNewWindow(props.image) : null"
       class="hidden md:flex relative bg-accent-1 w-[200px] h-[200px] md:w-[400px] md:h-[400px] xl:w-[600px] xl:h-[600px]"
     >
       <img
@@ -76,6 +84,7 @@ const props = defineProps<{
         :src="props.image"
         alt="base team"
         class="absolute top-[-10px] left-[-10px] w-[200px] h-[200px] md:w-[400px] md:h-[400px] xl:w-[600px] xl:h-[600px]"
+        :class="image === '/prices.png' ? 'object-cover object-top' : null"
       />
       <iframe
         v-else

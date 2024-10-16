@@ -45,14 +45,22 @@ const lang = useLanguageStore()
         :left="true"
         :description="lang.languageFile.aboutDescription"
       />
-
+      <HeroCard
+        id="prices"
+        :button="lang.languageFile.contactUsButton"
+        :image="'/prices.png'"
+        :leader="true"
+        :title="lang.languageFile.prices"
+        :left="false"
+        :description="lang.languageFile.pricesDescription"
+      />
       <HeroCard
         :hasMap="true"
         :button="lang.languageFile.contactUsButton"
         :image="''"
         :leader="true"
         :title="lang.languageFile.contactTitle"
-        :left="false"
+        :left="true"
         :description="lang.languageFile.contactDescription"
       />
       <div class="flex items-center justify-center" id="contact">
