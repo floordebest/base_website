@@ -65,9 +65,9 @@ export const classes = (lang: Object) => [
         color: 'class-blue'
       },
       {
-        name: lang.comingSoon,
+        name: lang.noGi,
         time: '20:00 - 21:00',
-        color: '#B8B8B8'
+        color: 'class-grey'
       }
     ]
   },
