@@ -184,15 +184,20 @@ export const classes = (lang: Object) => [
         time: '09:30 - 11:00',
         color: 'class-grey'
       },
-      {
-        name: lang.mmaActivity,
-        time: '11:00 - 12:00',
-        color: 'class-blue'
-      },
+      // {
+      //   name: lang.mmaActivity,
+      //   time: '11:00 - 12:00',
+      //   color: 'class-blue'
+      // },
       {
         name: lang.kidsWrestling,
-        time: '12:00 - 13:00',
+        time: '11:00 - 12:00',
         color: 'class-green'
+      },
+      {
+        name: lang.noClass,
+        time: '00:00 - 00:00',
+        color: '#B8B8B8'
       },
       {
         name: lang.noClass,
