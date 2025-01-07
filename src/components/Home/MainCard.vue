@@ -1,14 +1,4 @@
 <script setup lang="ts">
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faCalendarRange } from '@fortawesome/pro-thin-svg-icons/faCalendarRange'
-import { faArrowRightLong } from '@fortawesome/pro-regular-svg-icons/faArrowRightLong'
-import { faMap } from '@fortawesome/pro-thin-svg-icons/faMap'
-import { faEnvelope } from '@fortawesome/pro-thin-svg-icons/faEnvelope'
-import { faMessageLines } from '@fortawesome/pro-thin-svg-icons/faMessageLines'
-import { faBagShopping } from '@fortawesome/pro-thin-svg-icons/faBagShopping'
-import { faBoxingGlove } from '@fortawesome/pro-thin-svg-icons'
-import { faList } from '@fortawesome/pro-thin-svg-icons/faList'
-
 const props = defineProps<{
   title: string
   description: string
@@ -20,41 +10,77 @@ const props = defineProps<{
   <div
     class="group relative py-[20px] xl:py-[50px] px-[10px] xl:px-[30px] bg-core-lightest overflow-hidden z-30 min-w-[200px] xl:w-[250px] h-[220px] xl:h-[370px] space-y-[16px] xl:space-y-[30px] hover:bg-accent-1"
   >
-    <FontAwesomeIcon
-      :icon="faCalendarRange"
-      class="text-[35px] xl:text-[50px] text-accent-1 group-hover:text-core-lightest"
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 448 512"
+      class="w-[35px] h-[35px] xl:w-[50px] xl:h-[50px] fill-accent-1 group-hover:fill-core-lightest"
       v-if="props.icon === 'calendar'"
-    />
-    <FontAwesomeIcon
-      :icon="faBagShopping"
-      class="text-[35px] xl:text-[50px] text-accent-1 group-hover:text-core-lightest"
+    >
+      <path
+        d="M120 0c4.4 0 8 3.6 8 8l0 56 192 0 0-56c0-4.4 3.6-8 8-8s8 3.6 8 8l0 56 48 0c35.3 0 64 28.7 64 64l0 48 0 16 0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192l0-16 0-48C0 92.7 28.7 64 64 64l48 0 0-56c0-4.4 3.6-8 8-8zM432 192L16 192l0 256c0 26.5 21.5 48 48 48l320 0c26.5 0 48-21.5 48-48l0-256zM112 120l0-40L64 80c-26.5 0-48 21.5-48 48l0 48 416 0 0-48c0-26.5-21.5-48-48-48l-48 0 0 40c0 4.4-3.6 8-8 8s-8-3.6-8-8l0-40L128 80l0 40c0 4.4-3.6 8-8 8s-8-3.6-8-8zM376 280c0 4.4-3.6 8-8 8l-192 0c-4.4 0-8-3.6-8-8s3.6-8 8-8l192 0c4.4 0 8 3.6 8 8zM272 416L80 416c-4.4 0-8-3.6-8-8s3.6-8 8-8l192 0c4.4 0 8 3.6 8 8s-3.6 8-8 8zM72 288a24 24 0 1 0 48 0 24 24 0 1 0 -48 0zm24 40a40 40 0 1 1 0-80 40 40 0 1 1 0 80zM352 440a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm40-24a40 40 0 1 1 -80 0 40 40 0 1 1 80 0z"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 448 512"
+      class="w-[35px] h-[35px] xl:w-[50px] xl:h-[50px] fill-accent-1 group-hover:fill-core-lightest"
       v-if="props.icon === 'bag'"
-    />
-    <FontAwesomeIcon
-      :icon="faBoxingGlove"
-      class="text-[35px] xl:text-[50px] text-accent-1 group-hover:text-core-lightest"
+    >
+      <path
+        d="M144 96l0 32 160 0 0-32c0-44.2-35.8-80-80-80s-80 35.8-80 80zm-16 48l-80 0c-17.7 0-32 14.3-32 32l0 240c0 44.2 35.8 80 80 80l256 0c44.2 0 80-35.8 80-80l0-240c0-17.7-14.3-32-32-32l-80 0 0 88c0 4.4-3.6 8-8 8s-8-3.6-8-8l0-88-160 0 0 88c0 4.4-3.6 8-8 8s-8-3.6-8-8l0-88zm0-16l0-32c0-53 43-96 96-96s96 43 96 96l0 32 80 0c26.5 0 48 21.5 48 48l0 240c0 53-43 96-96 96L96 512c-53 0-96-43-96-96L0 176c0-26.5 21.5-48 48-48l80 0z"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 448 512"
+      class="w-[35px] h-[35px] xl:w-[50px] xl:h-[50px] fill-accent-1 group-hover:fill-core-lightest"
       v-if="props.icon === 'private'"
-    />
-    <FontAwesomeIcon
-      :icon="faList"
-      class="text-[35px] xl:text-[50px] text-accent-1 group-hover:text-core-lightest"
+    >
+      <path
+        d="M16 104c0-48.6 39.4-88 88-88l176 0c48.6 0 88 39.4 88 88l0 24-32 0c-38.7 0-71 27.5-78.4 64L136 192c-30.9 0-56-25.1-56-56l0-8c0-4.4-3.6-8-8-8s-8 3.6-8 8l0 8c0 39.8 32.2 72 72 72l120 0c0 44.2 35.8 80 80 80c4.4 0 8-3.6 8-8s-3.6-8-8-8c-35.3 0-64-28.7-64-64s28.7-64 64-64l38 0c.3 0 .7 0 1-.1c.3 0 .7 .1 1 .1c30.9 0 56 25.1 56 56l0 48.7c0 18.1-6.8 35.5-19.1 48.8l-64.2 69.5c-8.2 8.9-12.7 20.5-12.7 32.6l0 64.4c0 17.7-14.3 32-32 32L80 496c-17.7 0-32-14.3-32-32l0-104.4c0-2.3-1-4.4-2.7-6C27.3 337.5 16 314.1 16 288l0-184zM104 0C46.6 0 0 46.6 0 104L0 288c0 29.5 12.3 56.1 32 75l0 101c0 26.5 21.5 48 48 48l224 0c26.5 0 48-21.5 48-48l0-64.4c0-8 3-15.8 8.5-21.7l64.2-69.5c15-16.3 23.3-37.6 23.3-59.7l0-48.7c0-37.1-28-67.6-64-71.6l0-24.4C384 46.6 337.4 0 280 0L104 0zm36.6 337.5c-3.6-2.6-8.6-1.7-11.2 1.9s-1.7 8.6 1.9 11.2L178.2 384l-46.9 33.5c-3.6 2.6-4.4 7.6-1.9 11.2s7.6 4.4 11.2 1.9L192 393.8l51.4 36.7c3.6 2.6 8.6 1.7 11.2-1.9s1.7-8.6-1.9-11.2L205.8 384l46.9-33.5c3.6-2.6 4.4-7.6 1.9-11.2s-7.6-4.4-11.2-1.9L192 374.2l-51.4-36.7z"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512"
+      class="w-[35px] h-[35px] xl:w-[50px] xl:h-[50px] fill-accent-1 group-hover:fill-core-lightest"
       v-if="props.icon === 'explore'"
-    />
-    <FontAwesomeIcon
-      :icon="faMap"
-      class="text-[35px] xl:text-[50px] text-accent-1 group-hover:text-core-lightest"
+    >
+      <path
+        d="M40 64c-4.4 0-8 3.6-8 8l0 48c0 4.4 3.6 8 8 8l48 0c4.4 0 8-3.6 8-8l0-48c0-4.4-3.6-8-8-8L40 64zM16 72c0-13.3 10.7-24 24-24l48 0c13.3 0 24 10.7 24 24l0 48c0 13.3-10.7 24-24 24l-48 0c-13.3 0-24-10.7-24-24l0-48zM176 88l320 0c4.4 0 8 3.6 8 8s-3.6 8-8 8l-320 0c-4.4 0-8-3.6-8-8s3.6-8 8-8zm0 160l320 0c4.4 0 8 3.6 8 8s-3.6 8-8 8l-320 0c-4.4 0-8-3.6-8-8s3.6-8 8-8zm0 160l320 0c4.4 0 8 3.6 8 8s-3.6 8-8 8l-320 0c-4.4 0-8-3.6-8-8s3.6-8 8-8zM88 224l-48 0c-4.4 0-8 3.6-8 8l0 48c0 4.4 3.6 8 8 8l48 0c4.4 0 8-3.6 8-8l0-48c0-4.4-3.6-8-8-8zM40 208l48 0c13.3 0 24 10.7 24 24l0 48c0 13.3-10.7 24-24 24l-48 0c-13.3 0-24-10.7-24-24l0-48c0-13.3 10.7-24 24-24zm0 176c-4.4 0-8 3.6-8 8l0 48c0 4.4 3.6 8 8 8l48 0c4.4 0 8-3.6 8-8l0-48c0-4.4-3.6-8-8-8l-48 0zm-24 8c0-13.3 10.7-24 24-24l48 0c13.3 0 24 10.7 24 24l0 48c0 13.3-10.7 24-24 24l-48 0c-13.3 0-24-10.7-24-24l0-48z"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 576 512"
+      class="w-[35px] h-[35px] xl:w-[50px] xl:h-[50px] fill-accent-1 group-hover:fill-core-lightest"
       v-if="props.icon === 'base'"
-    />
-    <FontAwesomeIcon
-      :icon="faEnvelope"
-      class="text-[35px] xl:text-[50px] text-accent-1 group-hover:text-core-lightest"
+    >
+      <path
+        d="M181.3 32.5c1.6-.6 3.4-.6 5.1-.1L391.8 95.6 533.1 44.2c20.9-7.6 42.9 7.9 42.9 30.1l0 316.9c0 13.5-8.4 25.5-21.1 30.1L394.7 479.5c-1.6 .6-3.4 .6-5.1 .1L184.2 416.4 42.9 467.8C22.1 475.4 0 459.9 0 437.7L0 120.8c0-13.5 8.4-25.5 21.1-30.1L181.3 32.5zM26.5 105.8c-6.3 2.3-10.5 8.3-10.5 15l0 316.9c0 11.1 11 18.8 21.5 15L176 402.4l0-351L26.5 105.8zM384 461.2l0-351.3L192 50.8l0 351.3 192 59.1zm16-.6l149.5-54.4c6.3-2.3 10.5-8.3 10.5-15l0-316.9c0-11.1-11-18.8-21.5-15L400 109.6l0 351z"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512"
+      class="w-[35px] h-[35px] xl:w-[50px] xl:h-[50px] fill-accent-1 group-hover:fill-core-lightest"
       v-if="props.icon === 'email'"
-    />
-    <FontAwesomeIcon
-      :icon="faMessageLines"
-      class="text-[35px] xl:text-[50px] text-accent-1 group-hover:text-core-lightest"
+    >
+      <path
+        d="M64 80c-26.5 0-48 21.5-48 48l0 28.2L220.8 321.4c20.5 16.5 49.8 16.5 70.3 0L496 156.2l0-28.2c0-26.5-21.5-48-48-48L64 80zM16 176.7L16 384c0 26.5 21.5 48 48 48l384 0c26.5 0 48-21.5 48-48l0-207.3L301.2 333.8c-26.4 21.3-64 21.3-90.4 0L16 176.7zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"
+      />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512"
+      class="w-[35px] h-[35px] xl:w-[50px] xl:h-[50px] fill-accent-1 group-hover:fill-core-lightest"
       v-if="props.icon === 'whatsapp'"
-    />
+    >
+      <path
+        d="M176 416c0-8.8-7.2-16-16-16l-96 0c-26.5 0-48-21.5-48-48L16 64c0-26.5 21.5-48 48-48l384 0c26.5 0 48 21.5 48 48l0 288c0 26.5-21.5 48-48 48l-138.7 0c-3.5 0-6.8 1.1-9.6 3.2L176 496l0-80zM64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l80 0 16 0 0 16 0 64c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416 448 416c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0zm72 152c-4.4 0-8 3.6-8 8s3.6 8 8 8l240 0c4.4 0 8-3.6 8-8s-3.6-8-8-8l-240 0zm0 96c-4.4 0-8 3.6-8 8s3.6 8 8 8l144 0c4.4 0 8-3.6 8-8s-3.6-8-8-8l-144 0z"
+      />
+    </svg>
+
     <div class="flex flex-col space-y-[10px] max-w-[150px] md:max-w-[180px]">
       <p
         class="text-core-darkest text-[14px] xl:text-[21px] font-bold group-hover:text-core-lightest"
@@ -68,7 +94,15 @@ const props = defineProps<{
     <div
       class="absolute bottom-[16px] xl:bottom-[30px] flex text-center items-center justify-center rounded-full w-[25px] h-[25px] xl:w-[50px] xl:h-[50px] border-2 border-accent-1 group-hover:bg-core-lightest"
     >
-      <FontAwesomeIcon :icon="faArrowRightLong" class="text-[12px] xl:text-[16px] text-accent-1" />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+        class="w-[12px] h-[12px] xl:w-[16px] xl:h-[16px] fill-accent-1"
+      >
+        <path
+          d="M505 273c9.4-9.4 9.4-24.6 0-33.9L369 103c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l95 95L24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l406.1 0-95 95c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0L505 273z"
+        />
+      </svg>
     </div>
   </div>
 </template>
