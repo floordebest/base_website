@@ -16,7 +16,7 @@ const popUpStore = usePopUpStore()
       <div
         class="w-[1000px] md:w-[1400px] flex flex-col items-center md:justify-center border-2 border-core-dark"
       >
-        <div class="w-full grid grid-cols-6 divide-x-2 divide-core-dark">
+        <div class="w-full grid grid-cols-7 divide-x-2 divide-core-dark">
           <div
             v-for="lesson in classes(lang.languageFile)"
             class="grid-cols-1 divide-y-2 divide-core-dark"
@@ -31,6 +31,7 @@ const popUpStore = usePopUpStore()
                 <div
                   v-if="
                     classes.name != lang.languageFile.noClass &&
+                    classes.name != lang.languageFile.private &&
                     classes.name != lang.languageFile.comingSoon
                   "
                   class="w-[6px] h-[64px] md:h-[86px] group-hover:bg-accent-1"
@@ -43,12 +44,15 @@ const popUpStore = usePopUpStore()
                       ? 'bg-class-grey'
                       : classes.color === 'class-red'
                       ? 'bg-red-700'
+                      : classes.color === 'class-gold'
+                      ? 'bg-[#EFBF04]'
                       : 'bg-class-blue'
                   "
                 ></div>
                 <div
                   @click="
-                    classes.name != lang.languageFile.noClass
+                    classes.name != lang.languageFile.noClass &&
+                    classes.name != lang.languageFile.private
                       ? classes.name != lang.languageFile.comingSoon
                         ? popUpStore.setClass(classes.name)
                         : popUpStore.setClass('')
@@ -57,9 +61,11 @@ const popUpStore = usePopUpStore()
                   class="w-full h-[64px] md:h-[86px] text-center flex flex-col items-center justify-center group-hover:bg-accent-1 group-hover:text-core-lightest"
                   :class="
                     classes.name != lang.languageFile.noClass &&
+                    classes.name != lang.languageFile.private &&
                     classes.name != lang.languageFile.comingSoon
                       ? 'bg-white text-core-darkest'
-                      : classes.name != lang.languageFile.noClass
+                      : classes.name != lang.languageFile.noClass &&
+                        classes.name != lang.languageFile.private
                       ? 'bg-core-darker text-core-lightest'
                       : 'bg-core-darker text-core-dark'
                   "
@@ -68,10 +74,11 @@ const popUpStore = usePopUpStore()
                     {{ classes.name }}
                   </p>
                   <p
+                    v-if="classes.name != lang.languageFile.noClass"
                     class="font-bold text-[11px] l:text-[14px] text-core-lightest hidden group-hover:flex"
                   >
                     {{
-                      classes.name == lang.languageFile.noClass
+                      classes.name == lang.languageFile.private
                         ? lang.languageFile.bookAPrivateTraining
                         : lang.languageFile.bookAClassButton
                     }}
@@ -79,6 +86,7 @@ const popUpStore = usePopUpStore()
                   <p
                     v-if="
                       classes.name != lang.languageFile.noClass &&
+                      classes.name != lang.languageFile.private &&
                       classes.name != lang.languageFile.comingSoon
                     "
                     class="text-[11px] l:text-[14px] group-hover:hidden"

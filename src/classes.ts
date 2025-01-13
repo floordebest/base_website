@@ -10,14 +10,24 @@ export const classes = (lang: Object) => [
         color: 'class-purple'
       },
       {
-        name: lang.noClass,
+        name: lang.weights,
+        time: '10:30 - 12:30',
+        color: 'class-gold'
+      },
+      {
+        name: lang.private,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
       },
       {
-        name: lang.noClass,
+        name: lang.private,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
+      },
+      {
+        name: lang.weights,
+        time: '16:00 - 17:30',
+        color: 'class-gold'
       },
       {
         name: lang.kidsBJJ6,
@@ -40,9 +50,14 @@ export const classes = (lang: Object) => [
     day: lang.tuesday,
     classes: [
       {
-        name: lang.boxing,
+        name: lang.muayThaiActivity,
         time: '09:30 - 10:30',
         color: 'class-blue'
+      },
+      {
+        name: lang.weights,
+        time: '10:30 - 12:30',
+        color: 'class-gold'
       },
       {
         name: lang.bjjShort,
@@ -50,9 +65,14 @@ export const classes = (lang: Object) => [
         color: 'class-grey'
       },
       {
-        name: lang.noClass,
+        name: lang.private,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
+      },
+      {
+        name: lang.weights,
+        time: '16:00 - 17:30',
+        color: 'class-gold'
       },
       {
         name: lang.kidsKickboxing,
@@ -80,14 +100,24 @@ export const classes = (lang: Object) => [
         color: 'class-grey'
       },
       {
-        name: lang.noClass,
+        name: lang.weights,
+        time: '10:30 - 12:30',
+        color: 'class-gold'
+      },
+      {
+        name: lang.private,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
       },
       {
-        name: lang.noClass,
+        name: lang.private,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
+      },
+      {
+        name: lang.weights,
+        time: '16:00 - 17:30',
+        color: 'class-gold'
       },
       {
         name: lang.kidsBJJ6,
@@ -115,14 +145,25 @@ export const classes = (lang: Object) => [
         color: 'class-purple'
       },
       {
+        name: lang.weights,
+        time: '10:30 - 12:30',
+        color: 'class-gold'
+      },
+      {
         name: lang.bjjShort,
         time: '12:30 - 14:00',
         color: 'class-grey'
       },
       {
-        name: lang.noClass,
+        name: lang.private,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
+      },
+
+      {
+        name: lang.weights,
+        time: '16:00 - 17:30',
+        color: 'class-gold'
       },
       {
         name: lang.kidsKickboxing,
@@ -145,24 +186,34 @@ export const classes = (lang: Object) => [
     day: lang.friday,
     classes: [
       {
-        name: lang.boxing,
+        name: lang.muayThaiActivity,
         time: '09:30 - 10:30',
         color: 'class-blue'
       },
       {
-        name: lang.noClass,
+        name: lang.weights,
+        time: '10:30 - 12:30',
+        color: 'class-gold'
+      },
+      {
+        name: lang.private,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
       },
       {
-        name: lang.noClass,
+        name: lang.private,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
       },
       {
-        name: lang.noClass,
+        name: lang.private,
         time: '00:00 - 00:00',
         color: '#B8B8B8'
+      },
+      {
+        name: lang.weights,
+        time: '16:00 - 17:30',
+        color: 'class-gold'
       },
       {
         name: lang.wrestling,
@@ -193,6 +244,61 @@ export const classes = (lang: Object) => [
         name: lang.kidsWrestling,
         time: '12:00 - 13:00',
         color: 'class-green'
+      },
+      {
+        name: lang.private,
+        time: '00:00 - 00:00',
+        color: '#B8B8B8'
+      },
+      {
+        name: lang.weights,
+        time: '16:00 - 18:00',
+        color: 'class-gold'
+      },
+      {
+        name: lang.noClass,
+        time: '00:00 - 00:00',
+        color: '#B8B8B8'
+      },
+      {
+        name: lang.noClass,
+        time: '00:00 - 00:00',
+        color: '#B8B8B8'
+      },
+      {
+        name: lang.noClass,
+        time: '00:00 - 00:00',
+        color: '#B8B8B8'
+      }
+    ]
+  },
+  {
+    day: lang.sunday,
+    classes: [
+      {
+        name: lang.noClass,
+        time: '00:00 - 00:00',
+        color: '#B8B8B8'
+      },
+      {
+        name: lang.noClass,
+        time: '00:00 - 00:00',
+        color: '#B8B8B8'
+      },
+      {
+        name: lang.weights,
+        time: '11:00 - 13:00',
+        color: 'class-gold'
+      },
+      {
+        name: lang.noClass,
+        time: '00:00 - 00:00',
+        color: '#B8B8B8'
+      },
+      {
+        name: lang.noClass,
+        time: '00:00 - 00:00',
+        color: '#B8B8B8'
       },
       // {
       //   name: lang.noClass,
