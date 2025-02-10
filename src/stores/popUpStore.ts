@@ -17,3 +17,17 @@ export const usePopUpStore = defineStore('popUp', () => {
 
   return { showPopUp, selectedClass, setClass, closePopUp }
 })
+
+export const usePopUpOnLoadStore = defineStore('popUpOnLoad', () => {
+  const showPopUp = ref<boolean>(false)
+
+  const enablePopUp = () => {
+    showPopUp.value = true
+  }
+
+  function closePopUp() {
+    showPopUp.value = false
+  }
+
+  return { showPopUp, closePopUp, enablePopUp }
+})
