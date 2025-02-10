@@ -23,7 +23,7 @@ async function submit() {
       </div>
 
       <button @click="submit()" class="py-[15px] px-[30px] overflow-hidden bg-accent-1">
-        <p class="text-[40px] font-bold text-core-lightest">Book Now</p>
+        <p class="text-[20px] md:text-[40px] font-bold text-core-lightest">Book Now</p>
       </button>
 
       <div class="absolute top-[-50px] right-[-20px]">
