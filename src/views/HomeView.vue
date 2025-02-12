@@ -14,6 +14,15 @@ const lang = useLanguageStore()
 <template>
   <div class="relative w-full space-y-[90px] md:space-y-[120px] xl:space-y-[220px] px-[30px]">
     <MainHero id="home" />
+    <HeroCard
+      id="seminar"
+      :button="lang.languageFile.bookButton"
+      :image="'/demian.jpg'"
+      :leader="true"
+      :title="lang.languageFile.seminarTitle"
+      :left="false"
+      :description="lang.languageFile.seminarDescription"
+    />
     <TimeTable id="time" />
     <div class="flex flex-col w-full space-y-[90px]">
       <div class="flex flex-col w-full">

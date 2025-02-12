@@ -3,16 +3,10 @@ import BaseMenu from './components/BaseMenu.vue'
 import BottomMenu from './components/BottomMenu.vue'
 import { RouterView } from 'vue-router'
 import ContactForm from './components/ContactForm.vue'
-import { usePopUpOnLoadStore, usePopUpStore } from './stores/popUpStore'
+import { usePopUpStore } from './stores/popUpStore'
 import { useLanguageStore } from './stores/languageStore'
-import DemianPopUp from './components/DemianPopUp.vue'
 
 const popUpStore = usePopUpStore()
-const popUpMainStore = usePopUpOnLoadStore()
-
-if (!popUpMainStore.showPopUp) {
-  popUpMainStore.enablePopUp()
-}
 
 useLanguageStore().init()
 </script>
@@ -28,6 +22,5 @@ useLanguageStore().init()
     <RouterView />
     <BottomMenu />
     <ContactForm v-if="popUpStore.showPopUp" />
-    <DemianPopUp v-if="popUpMainStore.showPopUp" />
   </section>
 </template>

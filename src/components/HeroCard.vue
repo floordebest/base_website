@@ -47,12 +47,20 @@ function openInNewWindow(url: string) {
       </div>
       <div class="md:hidden flex relative bg-accent-1 w-[300px] h-[300px]">
         <img
-          @click="image === '/prices.png' ? openInNewWindow(props.image) : null"
+          @click="
+            props.image === '/prices.png' || props.image === '/demian.jpg'
+              ? openInNewWindow(props.image)
+              : null
+          "
           v-if="!props.hasMap"
           :src="props.image"
           alt="base team"
           class="absolute top-[-10px] left-[-10px] w-[300px] h-[300px]"
-          :class="image === '/prices.png' ? 'object-cover object-top' : null"
+          :class="
+            props.image === '/prices.png' || props.image === '/demian.jpg'
+              ? 'object-cover object-top'
+              : null
+          "
         />
         <iframe
           v-else
@@ -68,7 +76,9 @@ function openInNewWindow(url: string) {
       <CustomButton
         :title="props.button"
         @click="
-          props.button.includes('Book')
+          props.image === '/demian.jpg'
+            ? openInNewWindow('https://www.basemma.com/products/3-day-demian-maia-experience')
+            : props.button.includes('Book')
             ? popUpStore.setClass('Private Training')
             : popUpStore.setClass('')
         "
@@ -76,7 +86,11 @@ function openInNewWindow(url: string) {
     </div>
     <div
       v-if="!props.left"
-      @click="image === '/prices.png' ? openInNewWindow(props.image) : null"
+      @click="
+        image === '/prices.png' || props.image === '/demian.jpg'
+          ? openInNewWindow(props.image)
+          : null
+      "
       class="hidden md:flex relative bg-accent-1 w-[200px] h-[200px] md:w-[400px] md:h-[400px] xl:w-[600px] xl:h-[600px]"
     >
       <img
@@ -84,7 +98,11 @@ function openInNewWindow(url: string) {
         :src="props.image"
         alt="base team"
         class="absolute top-[-10px] left-[-10px] w-[200px] h-[200px] md:w-[400px] md:h-[400px] xl:w-[600px] xl:h-[600px]"
-        :class="image === '/prices.png' ? 'object-cover object-top' : null"
+        :class="
+          image === '/prices.png' || props.image === '/demian.jpg'
+            ? 'object-cover object-top'
+            : null
+        "
       />
       <iframe
         v-else
