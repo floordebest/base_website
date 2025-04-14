@@ -31,7 +31,7 @@
   "muayThaiDescription": "Our Muay Thai and Kickboxing program is designed for all skill levels. Whether you're a beginner looking to get started or an experienced fighter aiming to enhance your techniques, our program offers something for everyone",
   "boxingDescription": "At The Base Javea, we offer a variety of boxing classes for all skill levels. Whether you're a beginner looking to get started or an experienced fighter aiming to enhance your techniques, our program offers something for everyone with skilled coaches and a welcoming environment.",
   "fitBoxing": "Fit Boxing",
-  "fitBoxingDescription": "FitBoxing is a high-energy fusion of boxing techniques, cardio workouts, and strength training. This fitness program combines the best of traditional boxing with the latest in exercise science to deliver a full-body workout that is both effective and fun. Whether you’re a seasoned athlete or just starting your fitness journey, FitBoxing at The Base Javea offers something for everyone.",
+  "fitBoxingDescription": "FitBoxing is a high-energy fusion of boxing techniques, cardio workouts, and strength training. This fitness program combines the best of traditional boxing with the latest in exercise science to deliver a full-body workout that is both effective and fun. Whether you're a seasoned athlete or just starting your fitness journey, FitBoxing at The Base Javea offers something for everyone.",
   "kidsClasses": "Kids Classes",
   "kidsClassesDescription": "BJJ and Kickboxing emphasizes the importance of physical activity and can instil positive habits in your child from an early age. At the Base, your child will be engaged in a physically and intellectually stimulating activity.",
   "about": "About The Base",
@@ -73,5 +73,12 @@
   "pricesDescription": "We offer a variety of memberships and class packages to suit your needs. Whether you're looking for a one-time drop-in class or a monthly membership, we have something for everyone. Click on the image to enlarge or contact us for more information.",
   "bookButton": "Book Now",
   "seminarTitle": "Exclusive Nogi Training Camp with Demian Maia",
-  "seminarDescription": "Join us for an unforgettable, 3-Day, experience at The Base Jávea, a unique venue located on the Mediterranean coast, just steps from the beach. This three-day training camp, led by Demian Maia, a legend of Brazilian Jiu-Jitsu and the UFC, offers you the opportunity to refine your Jiu-Jitsu and MMA skills in a luxury setting. Read more on the booking by clicking the button below."
+  "seminarDescription": "Join us for an unforgettable, 3-Day, experience at The Base Jávea, a unique venue located on the Mediterranean coast, just steps from the beach. This three-day training camp, led by Demian Maia, a legend of Brazilian Jiu-Jitsu and the UFC, offers you the opportunity to refine your Jiu-Jitsu and MMA skills in a luxury setting. Read more on the booking by clicking the button below.",
+  "cookieBannerText": "We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking 'Accept', you consent to our use of cookies.",
+  "acceptCookies": "Accept",
+  "rejectCookies": "Reject",
+  "privacyPolicyTitle": "Privacy Policy",
+  "privacyPolicyText": "This is the privacy policy for The Base Javea. We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us.",
+  "cookiePolicyTitle": "Cookie Policy",
+  "cookiePolicyText": "This is the cookie policy for The Base Javea. We use cookies to help improve your experience of our website. This policy explains how we use cookies and the choices you have."
 }

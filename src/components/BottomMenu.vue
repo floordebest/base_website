@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useLanguageStore } from '../stores/languageStore'
+import { usePolicyModalStore } from '../stores/policyModalStore'
 
 const menuItems = [
   { name: 'Home', link: 'home' },
@@ -8,7 +9,8 @@ const menuItems = [
   { name: 'contact', link: 'contact' }
 ]
 
-const lang = useLanguageStore()
+const languageStore = useLanguageStore()
+const policyModalStore = usePolicyModalStore()
 
 function focusInput(link: string) {
   const element = document.getElementById(link)
@@ -21,6 +23,14 @@ function openInstagram() {
 
 function openFacebook() {
   window.open('https://www.facebook.com/thebasejavea', '_blank')
+}
+
+function goToPrivacyPolicy() {
+  policyModalStore.openPrivacyPolicy()
+}
+
+function goToCookiePolicy() {
+  policyModalStore.openCookiePolicy()
 }
 </script>
 
@@ -35,7 +45,7 @@ function openFacebook() {
       <div id="menuItems" class="flex flex-row items-center w-full justify-evenly">
         <div v-for="item in menuItems" class="hidden lg:flex">
           <p @click="focusInput(item.link)" class="text-core-lightest text-[14px] font-bold">
-            {{ item.name != 'Home' ? lang.languageFile[item.name] : 'Home' }}
+            {{ item.name != 'Home' ? languageStore.languageFile[item.name] : 'Home' }}
           </p>
         </div>
         <div class="flex flex-row space-x-[20px]">
@@ -72,4 +82,21 @@ function openFacebook() {
       <div class="w-[333px]"></div>
     </div>
   </section>
+  <footer class="bg-core-darkest text-white py-6">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <p>&copy; {{ new Date().getFullYear() }} The Base Javea. All rights reserved.</p>
+        </div>
+        <div class="flex space-x-6">
+          <span @click="goToPrivacyPolicy" class="cursor-pointer hover:text-accent-1">
+            {{ languageStore.languageFile.privacyPolicyTitle }}
+          </span>
+          <span @click="goToCookiePolicy" class="cursor-pointer hover:text-accent-1">
+            {{ languageStore.languageFile.cookiePolicyTitle }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>

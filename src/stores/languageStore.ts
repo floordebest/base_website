@@ -26,6 +26,8 @@ export const useLanguageStore = defineStore('language', () => {
     if (lang) {
       const language = JSON.parse(lang)
       selectedLanguage.value = language
+    } else {
+      selectedLanguage.value = languages[0]
     }
     // load the language file
     switch (selectedLanguage.value.short) {
