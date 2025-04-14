@@ -7,11 +7,27 @@ import CloseButton from './CloseButton.vue'
 const languageStore = useLanguageStore()
 const policyModalStore = usePolicyModalStore()
 
+// Define a type for the content structure
+interface PolicyContent {
+  title: string
+  sections: { title: string; text: string }[]
+}
+
+interface ContentMap {
+  en: PolicyContent
+  es: PolicyContent
+  fr: PolicyContent
+}
+
 // Use a computed property to reactively update language when it changes in the store
-const language = computed(() => languageStore.selectedLanguage?.short || 'en')
+// Restrict the language to be one of the keys of ContentMap
+const language = computed<keyof ContentMap>(() => {
+  const lang = languageStore.selectedLanguage?.short
+  return lang === 'en' || lang === 'es' || lang === 'fr' ? lang : 'en'
+})
 
 // Content for different languages, fully extracted from PrivacyPolicyEN.vue, PrivacyPolicyES.vue, PrivacyPolicyFR.vue
-const content = {
+const content: ContentMap = {
   en: {
     title: 'Privacy Policy',
     sections: [
@@ -109,8 +125,8 @@ const content = {
         text: 'Implementamos medidas técnicas y organizativas adecuadas para proteger sus datos de accesos no autorizados, pérdida o alteración. Sin embargo, ninguna transmisión por internet es completamente segura, y no podemos garantizar una seguridad absoluta.'
       },
       {
-        title: '10. Transferts Internationaux de Données',
-        text: "Nous ne transférons pas vos données personnelles en dehors de l'Espace Économique Européen (EEE), sauf comme indiqué dans notre Politique de Cookies concernant certains cookies tiers qui peuvent transférer des données aux États-Unis. Veuillez consulter notre Politique des Cookies pour des détails sur les garanties pour de tels transferts."
+        title: '10. Transferencias Internacionales de Datos',
+        text: 'No transferimos sus datos personales fuera del Área Económica Europea (EEA) excepto como se indica en nuestra Política de Cookies respecto a ciertas cookies de terceros que pueden transferir datos a los EE. UU. Consulte nuestra Política de Cookies para detalles sobre las salvaguardas para dichas transferencias.'
       },
       {
         title: '11. Quejas',

@@ -7,11 +7,27 @@ import CloseButton from './CloseButton.vue'
 const languageStore = useLanguageStore()
 const policyModalStore = usePolicyModalStore()
 
+// Define a type for the content structure
+interface PolicyContent {
+  title: string
+  sections: { title: string; text: string }[]
+}
+
+interface ContentMap {
+  en: PolicyContent
+  es: PolicyContent
+  fr: PolicyContent
+}
+
 // Use a computed property to reactively update language when it changes in the store
-const language = computed(() => languageStore.selectedLanguage?.short || 'en')
+// Restrict the language to be one of the keys of ContentMap
+const language = computed<keyof ContentMap>(() => {
+  const lang = languageStore.selectedLanguage?.short
+  return lang === 'en' || lang === 'es' || lang === 'fr' ? lang : 'en'
+})
 
 // Content for different languages, fully extracted from CookiePolicyEN.vue, CookiePolicyES.vue, CookiePolicyFR.vue
-const content = {
+const content: ContentMap = {
   en: {
     title: 'Cookie Policy',
     sections: [
