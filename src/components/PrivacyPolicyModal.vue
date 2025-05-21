@@ -17,13 +17,14 @@ interface ContentMap {
   en: PolicyContent
   es: PolicyContent
   fr: PolicyContent
+  nl: PolicyContent
 }
 
 // Use a computed property to reactively update language when it changes in the store
 // Restrict the language to be one of the keys of ContentMap
 const language = computed<keyof ContentMap>(() => {
   const lang = languageStore.selectedLanguage?.short
-  return lang === 'en' || lang === 'es' || lang === 'fr' ? lang : 'en'
+  return lang === 'en' || lang === 'es' || lang === 'fr' || lang === 'nl' ? lang : 'en'
 })
 
 // Content for different languages, fully extracted from PrivacyPolicyEN.vue, PrivacyPolicyES.vue, PrivacyPolicyFR.vue
@@ -196,6 +197,63 @@ const content: ContentMap = {
       {
         title: '13. Contactez-Nous',
         text: 'Si vous avez des questions ou des préoccupations concernant cette Politique de Confidentialité ou nos pratiques en matière de données, veuillez nous contacter à :\n<p>Email : contact@basemma.com<br />\nTéléphone : +34 674 39 46 92<br />\nAdresse : Calle Burdeos 8 & 9, 03730 Javea, Spain</p>'
+      }
+    ]
+  },
+  nl: {
+    title: 'Privacybeleid',
+    sections: [
+      {
+        title: '1. Introductie',
+        text: 'Welkom bij The Base Javea. Wij zetten ons in om je persoonlijke informatie en je recht op privacy te beschermen. Dit Privacybeleid legt uit hoe wij je informatie verzamelen, gebruiken, bekendmaken en beschermen wanneer je onze website bezoekt, onze diensten gebruikt of met ons interacteert.'
+      },
+      {
+        title: '2. Verantwoordelijke voor Gegevensverwerking',
+        text: 'De verantwoordelijke voor de verwerking van je persoonsgegevens is:\n\n<strong>The Base Javea S.L.</strong><br />\nAdres: Calle Burdeos 8 & 9, 03730 Javea, Spain<br />\nE-mail: contact@basemma.com<br />\nTelefoon: +34 674 39 46 92'
+      },
+      {
+        title: '3. Informatie die Wij Verzamelen',
+        text: 'Wij kunnen de volgende soorten persoonlijke informatie verzamelen:\n<ul class="list-disc pl-5">\n<li><strong>Persoonlijke Identificatiegegevens:</strong> Naam, e-mailadres, telefoonnummer en andere contactgegevens die je verstrekt wanneer je formulieren op onze website invult (bijvoorbeeld contact- of boekingsformulieren).</li>\n<li><strong>Gebruiksgegevens:</strong> Informatie over hoe je onze website gebruikt, zoals IP-adres, browsertype, bezochte pagina\'s en tijd doorgebracht op de site.</li>\n<li><strong>Cookies en Trackingtechnologieën:</strong> Gegevens verzameld via cookies en vergelijkbare technologieën om je browse-ervaring te verbeteren en het siteverkeer te analyseren. Zie ons Cookiebeleid voor meer details.</li>\n<li><strong>Andere Gegevens:</strong> Alle aanvullende informatie die je vrijwillig verstrekt, zoals feedback of berichten die naar ons worden gestuurd.</li>\n</ul>'
+      },
+      {
+        title: '4. Hoe We Je Informatie Gebruiken',
+        text: 'We gebruiken de informatie die we verzamelen voor de volgende doeleinden:\n<ul class="list-disc pl-5">\n<li>Om onze diensten te leveren en te onderhouden, inclusief het verwerken van boekingen en het beantwoorden van vragen.</li>\n<li>Om onze website en diensten te verbeteren door middel van analyses en gebruikersfeedback.</li>\n<li>Om met je te communiceren, inclusief het verzenden van promotionele materialen of updates over onze diensten (met je toestemming waar vereist).</li>\n<li>Om te voldoen aan wettelijke verplichtingen en onze rechten of de veiligheid van onze gebruikers te beschermen.</li>\n</ul>'
+      },
+      {
+        title: '5. Wettelijke Basis voor Verwerking',
+        text: 'Onder de Algemene Verordening Gegevensbescherming (AVG) verwerken we je gegevens op basis van:\n<ul class="list-disc pl-5">\n<li><strong>Toestemming:</strong> Waar je uitdrukkelijke toestemming hebt gegeven, zoals voor marketingmails of cookiegebruik.</li>\n<li><strong>Contractuele Noodzaak:</strong> Om een contract of serviceverzoek te vervullen, zoals het verwerken van een lesboeking.</li>\n<li><strong>Legitieme Belangen:</strong> Voor doeleinden zoals het verbeteren van onze diensten of het waarborgen van websitebeveiliging, op voorwaarde dat deze belangen niet zwaarder wegen dan je rechten.</li>\n<li><strong>Wettelijke Verplichting:</strong> Om te voldoen aan toepasselijke wet- en regelgeving.</li>\n</ul>'
+      },
+      {
+        title: '6. Gegevens Delen en Bekendmaking',
+        text: 'We kunnen je gegevens delen met:\n<ul class="list-disc pl-5">\n<li><strong>Wettelijke Autoriteiten:</strong> Wanneer vereist door de wet of om onze rechten, veiligheid of eigendom te beschermen.</li>\n<li>We verkopen je persoonlijke gegevens niet aan derden.</li>\n</ul>'
+      },
+      {
+        title: '7. Gegevensbewaring',
+        text: 'We bewaren je persoonlijke gegevens alleen zo lang als nodig is om de doeleinden die in dit beleid worden beschreven te vervullen, te voldoen aan wettelijke verplichtingen of geschillen op te lossen. Specifieke bewaartermijnen zijn afhankelijk van het type gegevens en het doel van de verzameling.'
+      },
+      {
+        title: '8. Je Rechten',
+        text: 'Onder de AVG heb je de volgende rechten met betrekking tot je persoonlijke gegevens:\n<ul class="list-disc pl-5">\n<li><strong>Toegang:</strong> Een kopie opvragen van de persoonlijke gegevens die we over je hebben.</li>\n<li><strong>Rectificatie:</strong> Verzoeken om correctie van onnauwkeurige of onvolledige gegevens.</li>\n<li><strong>Wissen:</strong> Verzoeken om verwijdering van je gegevens onder bepaalde voorwaarden.</li>\n<li><strong>Beperking:</strong> Verzoeken dat we de verwerking van je gegevens beperken.</li>\n<li><strong>Bezwaar:</strong> Bezwaar maken tegen verwerking op basis van legitieme belangen of voor directe marketing.</li>\n<li><strong>Gegevensoverdraagbaarheid:</strong> Een kopie van je gegevens opvragen in een gestructureerd, algemeen gebruikt en machineleesbaar formaat.</li>\n<li><strong>Intrekken Toestemming:</strong> Toestemming op elk moment intrekken wanneer verwerking gebaseerd is op toestemming.</li>\n</ul>\n<p>Om deze rechten uit te oefenen, neem contact met ons op via contact@basemma.com.</p>'
+      },
+      {
+        title: '9. Gegevensbeveiliging',
+        text: 'We implementeren passende technische en organisatorische maatregelen om je gegevens te beschermen tegen ongeautoriseerde toegang, verlies of wijziging. Echter, geen enkele internettransmissie is volledig veilig, en we kunnen geen absolute veiligheid garanderen.'
+      },
+      {
+        title: '10. Internationale Gegevensoverdrachten',
+        text: 'We dragen je persoonlijke gegevens niet over buiten de Europese Economische Ruimte (EER), behalve zoals vermeld in ons Cookiebeleid met betrekking tot bepaalde cookies van derden die gegevens naar de VS kunnen overdragen. Raadpleeg ons Cookiebeleid voor details over waarborgen voor dergelijke overdrachten.'
+      },
+      {
+        title: '11. Klachten',
+        text: 'Als je niet tevreden bent met hoe we je gegevens behandelen, heb je het recht om een klacht in te dienen bij een toezichthoudende autoriteit in de EU-lidstaat waar je woont of werkt. We zouden het echter op prijs stellen als je ons de kans zou geven om je zorgen rechtstreeks te behandelen via contact@basemma.com.'
+      },
+      {
+        title: '12. Updates van Dit Beleid',
+        text: 'We kunnen dit Privacybeleid van tijd tot tijd bijwerken. Wijzigingen worden op deze pagina geplaatst met een bijgewerkte ingangsdatum. We moedigen je aan dit beleid regelmatig te bekijken.\n<p><strong>Laatst Bijgewerkt:</strong> Oktober 2023</p>'
+      },
+      {
+        title: '13. Contact met Ons Opnemen',
+        text: 'Als je vragen of zorgen hebt over dit Privacybeleid of onze gegevenspraktijken, neem dan contact met ons op via:\n<p>E-mail: contact@basemma.com<br />\nTelefoon: +34 674 39 46 92<br />\nAdres: Calle Burdeos 8 & 9, 03730 Javea, Spain</p>'
       }
     ]
   }

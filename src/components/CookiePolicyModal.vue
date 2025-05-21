@@ -17,13 +17,14 @@ interface ContentMap {
   en: PolicyContent
   es: PolicyContent
   fr: PolicyContent
+  nl: PolicyContent
 }
 
 // Use a computed property to reactively update language when it changes in the store
 // Restrict the language to be one of the keys of ContentMap
 const language = computed<keyof ContentMap>(() => {
   const lang = languageStore.selectedLanguage?.short
-  return lang === 'en' || lang === 'es' || lang === 'fr' ? lang : 'en'
+  return lang === 'en' || lang === 'es' || lang === 'fr' || lang === 'nl' ? lang : 'en'
 })
 
 // Content for different languages, fully extracted from CookiePolicyEN.vue, CookiePolicyES.vue, CookiePolicyFR.vue
@@ -136,6 +137,43 @@ const content: ContentMap = {
       {
         title: '8. Mises à Jour de Cette Politique des Cookies',
         text: "Nous pouvons mettre à jour cette Politique des Cookies de temps à autre afin de refléter, par exemple, des modifications des cookies que nous utilisons ou pour d'autres raisons opérationnelles, légales ou réglementaires. Veuillez consulter cette politique régulièrement pour rester informé de notre utilisation des cookies et des technologies associées.\n<p><strong>Dernière Mise à Jour :</strong> Octobre 2023</p>"
+      }
+    ]
+  },
+  nl: {
+    title: 'Cookiebeleid',
+    sections: [
+      {
+        title: '1. Introductie',
+        text: 'Dit Cookiebeleid legt uit hoe The Base Javea cookies en vergelijkbare technologieën gebruikt om je te herkennen wanneer je onze website bezoekt. Het legt uit wat deze technologieën zijn, waarom we ze gebruiken en je rechten om ons gebruik ervan te controleren.'
+      },
+      {
+        title: '2. Wat zijn Cookies?',
+        text: 'Cookies zijn kleine gegevensbestanden die op je computer of mobiele apparaat worden geplaatst wanneer je een website bezoekt. Cookies worden veel gebruikt door website-eigenaren om hun websites te laten werken, of efficiënter te laten werken, en om rapportage-informatie te verstrekken.'
+      },
+      {
+        title: '3. Soorten Cookies die We Gebruiken',
+        text: 'We gebruiken de volgende soorten cookies op onze website:\n<ul class="list-disc pl-5">\n<li><strong>Essentiële Cookies:</strong> Deze cookies zijn noodzakelijk voor het goed functioneren van de website. Ze maken basisfuncties mogelijk zoals paginanavigatie en toegang tot beveiligde delen van de website. De website kan niet goed functioneren zonder deze cookies.</li>\n<li><strong>Prestatiecookies:</strong> Deze cookies helpen ons te begrijpen hoe bezoekers omgaan met de website door anoniem informatie te verzamelen en te rapporteren. Dit stelt ons in staat de prestaties van de website te verbeteren.</li>\n<li><strong>Functionele Cookies:</strong> Deze cookies maken gepersonaliseerde functies mogelijk, zoals het onthouden van je voorkeuren (bijvoorbeeld taalkeuze).</li>\n<li><strong>Marketingcookies:</strong> Deze cookies worden gebruikt om bezoekers te volgen op websites om relevante advertenties weer te geven. Ze worden ingesteld door derden met onze toestemming.</li>\n</ul>\n<p>Specifieke cookies die we gebruiken zijn onder andere:</p>\n<ul class="list-disc pl-5">\n<li><strong>_ga</strong> - Doel: Gebruikt door Google Analytics om gebruikers te onderscheiden, Duur: 2 jaar, Type: Prestatie/Marketing</li>\n<li><strong>_ga_#</strong> - Doel: Gebruikt door Google Analytics om gegevens te verzamelen over het aantal keren dat een gebruiker de website heeft bezocht, evenals de data voor het eerste en meest recente bezoek, Duur: 2 jaar, Type: Prestatie/Marketing</li>\n</ul>'
+      },
+      {
+        title: '4. Hoe We Cookies Gebruiken',
+        text: 'We gebruiken cookies voor de volgende doeleinden:\n<ul class="list-disc pl-5">\n<li>Om ervoor te zorgen dat de website correct en veilig functioneert.</li>\n<li>Om te analyseren hoe onze website wordt gebruikt, wat ons helpt de gebruikerservaring te verbeteren.</li>\n<li>Om je voorkeuren en instellingen te onthouden.</li>\n<li>Om gepersonaliseerde inhoud of advertenties te bieden (indien van toepassing en met je toestemming).</li>\n</ul>'
+      },
+      {
+        title: '5. Cookies van Derden',
+        text: 'In sommige gevallen gebruiken we cookies die worden aangeboden door vertrouwde derden. De volgende diensten van derden kunnen cookies plaatsen via onze site:\n<ul class="list-disc pl-5">\n<li><strong>Google Analytics:</strong> Om websiteverkeer en gebruikersgedrag te analyseren. Deze cookies kunnen gegevens naar de VS overdragen. Je kunt je afmelden via Google\'s tools (bijvoorbeeld de Google Analytics Opt-out Browser Add-on).</li>\n</ul>'
+      },
+      {
+        title: '6. Je Keuzes met Betrekking tot Cookies',
+        text: 'Je hebt het recht om te beslissen of je cookies accepteert of weigert. Je kunt je cookievoorkeuren uitoefenen door op de juiste opt-in of opt-out knoppen in onze cookietoestemmingsbanner te klikken wanneer je onze site voor het eerst bezoekt.\n<p>Je kunt ook je webbrowserinstellingen configureren of wijzigen om cookies te accepteren of te weigeren. Als je ervoor kiest om cookies te weigeren, kun je onze website nog steeds gebruiken, hoewel je toegang tot sommige functionaliteiten en gebieden van onze website beperkt kan zijn. Aangezien de manieren waarop je cookies kunt weigeren via je webbrowserinstellingen per browser verschillen, moet je het helpmenu van je browser bezoeken voor meer informatie.</p>'
+      },
+      {
+        title: '7. Hoe Je Contact met Ons Kunt Opnemen',
+        text: 'Als je vragen hebt over ons gebruik van cookies of andere technologieën, neem dan contact met ons op via:\n<p>E-mail: contact@basemma.com<br />\nTelefoon: +34 674 39 46 92<br />\nAdres: Calle Burdeos 8 & 9, 03730 Javea, Spain</p>'
+      },
+      {
+        title: '8. Updates van Dit Cookiebeleid',
+        text: 'We kunnen dit Cookiebeleid van tijd tot tijd bijwerken om bijvoorbeeld wijzigingen in de cookies die we gebruiken of om andere operationele, juridische of regelgevende redenen weer te geven. Bekijk dit beleid regelmatig om op de hoogte te blijven van ons gebruik van cookies en gerelateerde technologieën.\n<p><strong>Laatst Bijgewerkt:</strong> Oktober 2023</p>'
       }
     ]
   }

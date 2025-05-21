@@ -14,7 +14,7 @@ const lang = useLanguageStore()
 <template>
   <div class="relative w-full space-y-[90px] md:space-y-[120px] xl:space-y-[220px] px-[30px]">
     <MainHero id="home" />
-    <HeroCard
+    <!-- <HeroCard
       id="seminar"
       :button="lang.languageFile.bookButton"
       :image="'/demian.jpg'"
@@ -22,6 +22,15 @@ const lang = useLanguageStore()
       :title="lang.languageFile.seminarTitle"
       :left="false"
       :description="lang.languageFile.seminarDescription"
+    /> -->
+    <HeroCard
+      id="private"
+      :button="lang.languageFile.bookAPrivateTraining"
+      :image="'/privates.jpg'"
+      :leader="true"
+      :title="lang.languageFile.personalTraining"
+      :left="false"
+      :description="lang.languageFile.privateClassesDescription"
     />
     <TimeTable id="time" />
     <div class="flex flex-col w-full space-y-[90px]">
@@ -37,18 +46,18 @@ const lang = useLanguageStore()
         </div>
       </div>
       <HeroCard
-        id="private"
-        :button="lang.languageFile.bookAPrivateTraining"
-        :image="'/base_kickbocks.png'"
+        id="kids"
+        :button="lang.languageFile.contactUsButton"
+        :image="'/kids_boxing.jpg'"
         :leader="true"
-        :title="lang.languageFile.personalTraining"
+        :title="lang.languageFile.kidsClasses"
         :left="false"
-        :description="lang.languageFile.privateClassesDescription"
+        :description="lang.languageFile.kidsClassesDescription"
       />
       <HeroCard
         id="about"
         :button="lang.languageFile.contactUsButton"
-        :image="'/team.png'"
+        :image="'/base_group.jpg'"
         :leader="true"
         :title="lang.languageFile.about"
         :left="true"

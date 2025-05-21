@@ -30,7 +30,7 @@ function openInNewWindow(url: string) {
         v-if="!props.hasMap"
         :src="props.image"
         alt="base team"
-        class="absolute top-[-10px] left-[-10px] w-[200px] h-[200px] md:w-[400px] md:h-[400px] xl:w-[600px] xl:h-[600px]"
+        class="absolute top-[-10px] left-[-10px] w-[200px] h-[200px] md:w-[400px] md:h-[400px] xl:w-[600px] xl:h-[600px] object-cover"
       />
       <iframe
         v-else
@@ -55,11 +55,9 @@ function openInNewWindow(url: string) {
           v-if="!props.hasMap"
           :src="props.image"
           alt="base team"
-          class="absolute top-[-10px] left-[-10px] w-[300px] h-[300px]"
+          class="absolute top-[-10px] left-[-10px] w-[300px] h-[300px] object-cover"
           :class="
-            props.image === '/prices.png' || props.image === '/demian.jpg'
-              ? 'object-cover object-top'
-              : null
+            props.image === '/prices.png' || props.image === '/demian.jpg' ? 'object-top' : null
           "
         />
         <iframe
@@ -97,12 +95,8 @@ function openInNewWindow(url: string) {
         v-if="!props.hasMap"
         :src="props.image"
         alt="base team"
-        class="absolute top-[-10px] left-[-10px] w-[200px] h-[200px] md:w-[400px] md:h-[400px] xl:w-[600px] xl:h-[600px]"
-        :class="
-          image === '/prices.png' || props.image === '/demian.jpg'
-            ? 'object-cover object-top'
-            : null
-        "
+        class="absolute top-[-10px] left-[-10px] w-[200px] h-[200px] md:w-[400px] md:h-[400px] xl:w-[600px] xl:h-[600px] object-cover"
+        :class="image === '/prices.png' || props.image === '/demian.jpg' ? 'object-top' : null"
       />
       <iframe
         v-else

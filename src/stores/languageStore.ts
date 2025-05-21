@@ -3,6 +3,7 @@ import { defineStore } from 'pinia'
 import en from '../en.json'
 import es from '../es.json'
 import fr from '../fr.json'
+import nl from '../nl.json'
 
 type Language = {
   name: string
@@ -12,7 +13,8 @@ type Language = {
 const languages: Language[] = [
   { name: 'English', short: 'en' },
   { name: 'Español', short: 'es' },
-  { name: 'Frances', short: 'fr' }
+  { name: 'Français', short: 'fr' },
+  { name: 'Nederlands', short: 'nl' }
 ]
 
 export const useLanguageStore = defineStore('language', () => {
@@ -39,13 +41,31 @@ export const useLanguageStore = defineStore('language', () => {
         break
       case 'es':
         languageFile.value = es
+        break
+      case 'nl':
+        languageFile.value = nl
+        break
     }
   }
 
   function setLanguage(language: Language) {
     localStorage.setItem('lang', JSON.stringify(language))
     selectedLanguage.value = language
-    languageFile.value = language.short === 'en' ? en : language.short === 'es' ? es : fr
+
+    switch (language.short) {
+      case 'en':
+        languageFile.value = en
+        break
+      case 'fr':
+        languageFile.value = fr
+        break
+      case 'es':
+        languageFile.value = es
+        break
+      case 'nl':
+        languageFile.value = nl
+        break
+    }
   }
 
   return { selectedLanguage, availableLanguages, setLanguage, init, languageFile }
