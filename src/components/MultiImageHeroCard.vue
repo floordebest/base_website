@@ -15,11 +15,6 @@ const props = defineProps<{
   hasMap?: boolean
 }>()
 
-function openInNewWindow(url: string) {
-  console.log('click')
-  window.open(url, '_blank')
-}
-
 // Calculate grid layout based on number of images
 const gridLayout = computed(() => {
   const count = props.images.length
