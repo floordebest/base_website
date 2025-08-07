@@ -7,6 +7,7 @@ import { activities } from '../config'
 import TimeTable from '../components/TimeTable/TimeTable.vue'
 import SectionTitle from '../components/SectionTitle.vue'
 import { useLanguageStore } from '../stores/languageStore'
+import MultiImageHeroCard from '../components/MultiImageHeroCard.vue'
 
 const lang = useLanguageStore()
 </script>
@@ -23,14 +24,19 @@ const lang = useLanguageStore()
       :left="false"
       :description="lang.languageFile.seminarDescription"
     /> -->
-    <HeroCard
-      id="private"
-      :button="lang.languageFile.bookAPrivateTraining"
-      :image="'/privates.jpg'"
+    <MultiImageHeroCard
+      id="about"
+      :button="lang.languageFile.contactUsButton"
+      :images="[
+        '/base_ian_demian.jpg',
+        '/base_reception.jpg',
+        '/base_outside.jpg',
+        '/base_opening.jpg'
+      ]"
       :leader="true"
-      :title="lang.languageFile.personalTraining"
+      :title="lang.languageFile.introductionTitle"
       :left="false"
-      :description="lang.languageFile.privateClassesDescription"
+      :description="lang.languageFile.introduction"
     />
     <TimeTable id="time" />
     <div class="flex flex-col w-full space-y-[90px]">
@@ -45,16 +51,52 @@ const lang = useLanguageStore()
           <ActivityCard v-for="activity in activities" :activity="activity" />
         </div>
       </div>
-      <HeroCard
+      <MultiImageHeroCard
         id="kids"
         :button="lang.languageFile.contactUsButton"
-        :image="'/kids_boxing.jpg'"
+        :images="['/kids_boxing.jpg', '/kids2.jpg', '/kids3.jpg']"
         :leader="true"
-        :title="lang.languageFile.kidsClasses"
+        :title="lang.languageFile.kidsClassesExpanded"
         :left="false"
-        :description="lang.languageFile.kidsClassesDescription"
+        :description="lang.languageFile.kidsClassesDescriptionExpanded"
+      />
+      <MultiImageHeroCard
+        id="bjj"
+        :button="lang.languageFile.contactUsButton"
+        :images="['/activities/bjj.jpg', '/bjj2.jpg', '/bjj3.jpg']"
+        :leader="true"
+        :title="lang.languageFile.bjjExpanded"
+        :left="true"
+        :description="lang.languageFile.bjjDescriptionExpanded"
+      />
+      <MultiImageHeroCard
+        id="mma"
+        :button="lang.languageFile.contactUsButton"
+        :images="['/activities/kickboxing.jpg', '/activities/kickboxing.png', '/kickboxing2.jpg']"
+        :leader="true"
+        :title="lang.languageFile.kickboxingExpanded"
+        :left="false"
+        :description="lang.languageFile.kickboxingDescriptionExpanded"
       />
       <HeroCard
+        id="private"
+        :button="lang.languageFile.bookAPrivateTraining"
+        :image="'/privates.jpg'"
+        :leader="true"
+        :title="lang.languageFile.personalTraining"
+        :left="true"
+        :description="lang.languageFile.privateClassesDescription"
+      />
+      <MultiImageHeroCard
+        id="about"
+        :button="lang.languageFile.contactUsButton"
+        :images="['/base_group.jpg', '/base2.jpg', '/base3.jpg']"
+        :leader="true"
+        :title="lang.languageFile.about"
+        :left="false"
+        :description="lang.languageFile.aboutDescription"
+      />
+      <!-- <HeroCard
         id="about"
         :button="lang.languageFile.contactUsButton"
         :image="'/base_group.jpg'"
@@ -62,14 +104,14 @@ const lang = useLanguageStore()
         :title="lang.languageFile.about"
         :left="true"
         :description="lang.languageFile.aboutDescription"
-      />
+      /> -->
       <HeroCard
         id="prices"
         :button="lang.languageFile.contactUsButton"
         :image="'/prices.png'"
         :leader="true"
         :title="lang.languageFile.prices"
-        :left="false"
+        :left="true"
         :description="lang.languageFile.pricesDescription"
       />
       <HeroCard
@@ -78,7 +120,7 @@ const lang = useLanguageStore()
         :image="''"
         :leader="true"
         :title="lang.languageFile.contactTitle"
-        :left="true"
+        :left="false"
         :description="lang.languageFile.contactDescription"
       />
       <div class="flex items-center justify-center" id="contact">
