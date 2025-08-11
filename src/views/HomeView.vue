@@ -27,12 +27,7 @@ const lang = useLanguageStore()
     <MultiImageHeroCard
       id="about"
       :button="lang.languageFile.contactUsButton"
-      :images="[
-        '/base_ian_demian.jpg',
-        '/base_reception.jpg',
-        '/base_outside.jpg',
-        '/base_opening.jpg'
-      ]"
+      :images="['/base_group.jpg', '/base2.jpg', '/base3.jpg']"
       :leader="true"
       :title="lang.languageFile.introductionTitle"
       :left="false"
@@ -90,7 +85,12 @@ const lang = useLanguageStore()
       <MultiImageHeroCard
         id="about"
         :button="lang.languageFile.contactUsButton"
-        :images="['/base_group.jpg', '/base2.jpg', '/base3.jpg']"
+        :images="[
+          '/base_ian_demian.jpg',
+          '/base_reception.jpg',
+          '/base_outside.jpg',
+          '/base_opening.jpg'
+        ]"
         :leader="true"
         :title="lang.languageFile.about"
         :left="false"
