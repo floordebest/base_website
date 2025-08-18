@@ -27,6 +27,11 @@ function openInNewWindow(url: string) {
       class="hidden md:flex relative bg-accent-1 w-[200px] h-[200px] md:w-[400px] md:h-[400px] xl:w-[600px] xl:h-[600px]"
     >
       <img
+        @click="
+          props.image === '/prices.png' || props.image === '/demian.jpg'
+            ? openInNewWindow(props.image)
+            : null
+        "
         v-if="!props.hasMap"
         :src="props.image"
         alt="base team"
