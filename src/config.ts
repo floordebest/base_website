@@ -6,6 +6,11 @@ export interface Activity {
 
 export const activities: Array<Activity> = [
   {
+    name: 'privateClasses',
+    description: 'privateClassesDescription',
+    image: '/activities/boxing.png'
+  },
+  {
     name: 'bjj',
     description: 'bjjDescription',
     image: '/activities/bjj.jpg'
@@ -18,7 +23,7 @@ export const activities: Array<Activity> = [
   {
     name: 'mma',
     description: 'mmaDescription',
-    image: '/activities/grappling.png'
+    image: '/activities/grappling.jpg'
   },
   {
     name: 'muayThai',
@@ -34,10 +39,5 @@ export const activities: Array<Activity> = [
     name: 'fitBoxing',
     description: 'fitBoxingDescription',
     image: '/activities/fitboxing.jpg'
-  },
-  {
-    name: 'privateClasses',
-    description: 'privateClassesDescription',
-    image: '/activities/boxing.png'
   }
 ]
