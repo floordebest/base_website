@@ -12,7 +12,7 @@
   "aboutUs": "Sobre Nosotros",
   "contact": "Contacto",
   "emailUs": "Envíanos un correo electrónico",
-  "ourClasses": "Clases de Verano",
+  "ourClasses": "Nuestras Clases",
   "mainTitle": "Academia de Jiu-Jitsu Brasileño y Artes Marciales Mixtas",
   "mainSlogan": "Domina Jiu-Jitsu, Muay Thai, Kickboxing, Boxeo y Defensa Personal para todas las edades y niveles.",
   "shop": "Tienda en Línea",
@@ -55,7 +55,7 @@
   "mmaActivity": "MMA Específico",
   "muayThaiActivity": "Kickboxing / Muay Thai",
   "weights": "Pesas libres (sin clase)",
-  "kidsBJJ6": "BJJ Infantil 6-8 años",
+  "kidsBJJ6": "BJJ Infantil 6-14 años",
   "kidsBJJ9": "BJJ Infantil 9-14 años",
   "kidsMMA": "MMA Infantil 6-14 años",
   "kidsKickboxing": "Kickboxing Infantil 6-14 años",
@@ -84,10 +84,12 @@
   "cookiePolicyText": "Esta es la política de cookies de The Base Javea. Utilizamos cookies para ayudar a mejorar su experiencia en nuestro sitio web. Esta política explica cómo usamos las cookies y las opciones que tiene.",
   "introductionTitle": "Bienvenido a The Base",
   "introduction": "Ya seas un <strong>principiante completo</strong> o un <strong>artista marcial experimentado</strong>…<br> Ya sea que busques <strong>aprender a defenderte, hacer nuevos amigos en una comunidad acogedora, ponerte en forma y perder peso</strong>, o incluso <strong>comenzar una carrera profesional — The Base es para ti.</strong> <br><br>Tenemos estudiantes de <strong>todas las edades</strong> —  Todos entrenan juntos con <strong>respeto y propósito.</strong> <br><br>En The Base, no hay <strong>ego, no hay rivalidad entre estudiantes</strong>, y <strong>no hay estrés.</strong> <br>Este es tu espacio. Te sentirás como en casa ",
-  "kidsClassesExpanded": "🧒 Jiu-Jitsu Brasileño y Kickboxing para Niños",
+  "kidsClassesExpanded": "🧒 Jiu-Jitsu Brasileño y Kickboxing para Niños -> Comienza el 15 de Septiembre",
   "kidsClassesDescriptionExpanded": "En The Base, nuestros programas para niños de <strong>Jiu-Jitsu Brasileño y Kickboxing</strong> están diseñados para apoyar el <strong>desarrollo físico y mental</strong> de tu hijo en un ambiente divertido, estructurado y seguro.<br><br>A través de las artes marciales, los niños aprenden valores esenciales: <strong>respeto, disciplina, humildad, coraje y concentración</strong>. Construyen <strong>confianza</strong> y aprenden a <strong>defenderse</strong> — no con agresión, sino con fuerza calmada y autocontrol. Les enseñamos a <strong>protegerse</strong>, a <strong>respetar a otros</strong>, a <strong>nunca hacer bullying</strong>, y a <strong>nunca permitir que les hagan bullying</strong>.<br><br>Ya sea que tu hijo sea tímido, enérgico, atlético o nuevo en los deportes, encontrará un lugar aquí.<br><br>En The Base, cada niño recibe apoyo — no hay <strong>presión</strong>, solo <strong>crecimiento, orientación y espíritu de equipo</strong>.",
   "bjjExpanded": "🥋 Jiu-Jitsu Brasileño",
   "bjjDescriptionExpanded": "En The Base Jávea, nuestro Jiu-Jitsu tiene sus raíces en el linaje de Rickson Gracie y se basa en <strong>control de suelo, dominio posicional y uso inteligente del apalancamiento</strong>. Ya sea en Gi o NoGi, nos enfocamos en ayudarte a mantener la calma, ser eficiente y efectivo en el suelo — especialmente contra oponentes más grandes y fuertes.<br><br>Este es un <strong>Jiu-Jitsu detallado y refinado</strong>, diseñado para la autodefensa en la vida real pero también altamente efectivo en el deporte y MMA. Enfatizamos la <strong>conexión, el timing y la distribución del peso</strong>, haciendo que el arte sea accesible pero increíblemente profundo.<br><br>A lo largo de los años, hemos entrenado de cerca con la leyenda de UFC <strong>Demian Maia</strong>, y nuestro estilo refleja eso — mezclando <strong>autodefensa callejera, BJJ puro y aplicabilidad en MMA</strong>.<br>También ponemos un fuerte énfasis en los <strong>fundamentos de Judo y Lucha</strong>, asegurando que nuestros estudiantes se sientan cómodos llevando la pelea al suelo cuando sea necesario.",
   "kickboxingExpanded": "🥊 Kickboxing / Muay Thai",
-  "kickboxingDescriptionExpanded": "Nuestro programa de Kickboxing y Muay Thai combina <strong>excelencia técnica, acondicionamiento físico</strong> y una <strong>atmósfera acogedora y motivadora</strong>. Las clases están diseñadas para ser efectivas tanto para <strong>autodefensa</strong> como completamente aplicables al <strong>Kickboxing, Muay Thai y MMA</strong>. Ya seas principiante o un striker experimentado, eres bienvenido y serás tratado con cuidado."
+  "kickboxingDescriptionExpanded": "Nuestro programa de Kickboxing y Muay Thai combina <strong>excelencia técnica, acondicionamiento físico</strong> y una <strong>atmósfera acogedora y motivadora</strong>. Las clases están diseñadas para ser efectivas tanto para <strong>autodefensa</strong> como completamente aplicables al <strong>Kickboxing, Muay Thai y MMA</strong>. Ya seas principiante o un striker experimentado, eres bienvenido y serás tratado con cuidado.",
+  "kidsPrices": "🧒 Precios para Niños",
+  "kidsPricesDescription": "Nuestro programa para niños está abierto a todas las edades, desde los 6 hasta los 14 años. El programa para niños se desarrolla en 2 semestres, del 15 de septiembre al 31 de enero y del 1 de febrero al 30 de junio. El programa para niños está abierto a todas las edades, de 6 a 14 años y por supuesto puedes comenzar en cualquier época del año."
 }

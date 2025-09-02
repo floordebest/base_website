@@ -28,7 +28,9 @@ function openInNewWindow(url: string) {
     >
       <img
         @click="
-          props.image === '/prices.png' || props.image === '/demian.jpg'
+          props.image === '/prices.png' ||
+          props.image === '/demian.jpg' ||
+          props.image === '/kids_prices.jpg'
             ? openInNewWindow(props.image)
             : null
         "
@@ -53,7 +55,9 @@ function openInNewWindow(url: string) {
       <div class="md:hidden flex relative bg-accent-1 w-[300px] h-[300px]">
         <img
           @click="
-            props.image === '/prices.png' || props.image === '/demian.jpg'
+            props.image === '/prices.png' ||
+            props.image === '/demian.jpg' ||
+            props.image === '/kids_prices.jpg'
               ? openInNewWindow(props.image)
               : null
           "
@@ -62,7 +66,11 @@ function openInNewWindow(url: string) {
           alt="base team"
           class="absolute top-[-10px] left-[-10px] w-[300px] h-[300px] object-cover"
           :class="
-            props.image === '/prices.png' || props.image === '/demian.jpg' ? 'object-top' : null
+            props.image === '/prices.png' ||
+            props.image === '/demian.jpg' ||
+            props.image === '/kids_prices.jpg'
+              ? 'object-top'
+              : null
           "
         />
         <iframe
@@ -90,7 +98,9 @@ function openInNewWindow(url: string) {
     <div
       v-if="!props.left"
       @click="
-        image === '/prices.png' || props.image === '/demian.jpg'
+        props.image === '/prices.png' ||
+        props.image === '/demian.jpg' ||
+        props.image === '/kids_prices.jpg'
           ? openInNewWindow(props.image)
           : null
       "
@@ -101,7 +111,13 @@ function openInNewWindow(url: string) {
         :src="props.image"
         alt="base team"
         class="absolute top-[-10px] left-[-10px] w-[200px] h-[200px] md:w-[400px] md:h-[400px] xl:w-[600px] xl:h-[600px] object-cover"
-        :class="image === '/prices.png' || props.image === '/demian.jpg' ? 'object-top' : null"
+        :class="
+          props.image === '/prices.png' ||
+          props.image === '/demian.jpg' ||
+          props.image === '/kids_prices.jpg'
+            ? 'object-top'
+            : null
+        "
       />
       <iframe
         v-else

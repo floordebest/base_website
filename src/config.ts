@@ -13,7 +13,7 @@ export const activities: Array<Activity> = [
   {
     name: 'bjj',
     description: 'bjjDescription',
-    image: '/activities/bjj.jpg'
+    image: '/floris.jpg'
   },
   {
     name: 'kidsClasses',
@@ -29,11 +29,6 @@ export const activities: Array<Activity> = [
     name: 'muayThai',
     description: 'muayThaiDescription',
     image: '/activities/kickboxing.jpg'
-  },
-  {
-    name: 'boxing',
-    description: 'boxingDescription',
-    image: '/activities/boxingClass.png'
   },
   {
     name: 'fitBoxing',

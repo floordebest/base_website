@@ -15,15 +15,6 @@ const lang = useLanguageStore()
 <template>
   <div class="relative w-full space-y-[90px] md:space-y-[120px] xl:space-y-[220px] px-[30px]">
     <MainHero id="home" />
-    <!-- <HeroCard
-      id="seminar"
-      :button="lang.languageFile.bookButton"
-      :image="'/demian.jpg'"
-      :leader="true"
-      :title="lang.languageFile.seminarTitle"
-      :left="false"
-      :description="lang.languageFile.seminarDescription"
-    /> -->
     <MultiImageHeroCard
       id="about"
       :button="lang.languageFile.contactUsButton"
@@ -32,6 +23,15 @@ const lang = useLanguageStore()
       :title="lang.languageFile.introductionTitle"
       :left="false"
       :description="lang.languageFile.introduction"
+    />
+    <MultiImageHeroCard
+      id="kids"
+      :button="lang.languageFile.contactUsButton"
+      :images="['/kids_boxing.jpg', '/kids2.jpg', '/kids3.jpg']"
+      :leader="true"
+      :title="lang.languageFile.kidsClassesExpanded"
+      :left="true"
+      :description="lang.languageFile.kidsClassesDescriptionExpanded"
     />
     <TimeTable id="time" />
     <div class="flex flex-col w-full space-y-[90px]">
@@ -46,19 +46,11 @@ const lang = useLanguageStore()
           <ActivityCard v-for="activity in activities" :activity="activity" />
         </div>
       </div>
-      <MultiImageHeroCard
-        id="kids"
-        :button="lang.languageFile.contactUsButton"
-        :images="['/kids_boxing.jpg', '/kids2.jpg', '/kids3.jpg']"
-        :leader="true"
-        :title="lang.languageFile.kidsClassesExpanded"
-        :left="false"
-        :description="lang.languageFile.kidsClassesDescriptionExpanded"
-      />
+
       <MultiImageHeroCard
         id="bjj"
         :button="lang.languageFile.contactUsButton"
-        :images="['/activities/bjj.jpg', '/bjj2.jpg', '/bjj3.jpg']"
+        :images="['/elias.jpg', '/bjj2.jpg', '/bjj3.jpg']"
         :leader="true"
         :title="lang.languageFile.bjjExpanded"
         :left="true"
@@ -96,15 +88,6 @@ const lang = useLanguageStore()
         :left="false"
         :description="lang.languageFile.aboutDescription"
       />
-      <!-- <HeroCard
-        id="about"
-        :button="lang.languageFile.contactUsButton"
-        :image="'/base_group.jpg'"
-        :leader="true"
-        :title="lang.languageFile.about"
-        :left="true"
-        :description="lang.languageFile.aboutDescription"
-      /> -->
       <HeroCard
         id="prices"
         :button="lang.languageFile.contactUsButton"
@@ -115,12 +98,21 @@ const lang = useLanguageStore()
         :description="lang.languageFile.pricesDescription"
       />
       <HeroCard
+        id="kids_prices"
+        :button="lang.languageFile.contactUsButton"
+        :image="'/kids_prices.jpg'"
+        :leader="true"
+        :title="lang.languageFile.kidsPrices"
+        :left="false"
+        :description="lang.languageFile.kidsPricesDescription"
+      />
+      <HeroCard
         :hasMap="true"
         :button="lang.languageFile.contactUsButton"
         :image="''"
         :leader="true"
         :title="lang.languageFile.contactTitle"
-        :left="false"
+        :left="true"
         :description="lang.languageFile.contactDescription"
       />
       <div class="flex items-center justify-center" id="contact">

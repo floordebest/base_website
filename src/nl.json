@@ -12,7 +12,7 @@
   "aboutUs": "Over ons",
   "contact": "Contact",
   "emailUs": "E-mail ons",
-  "ourClasses": "Zomerlessen",
+  "ourClasses": "Onze Lessen",
   "mainTitle": "Braziliaans Jiu-Jitsu en Mixed Martial Arts Academie",
   "mainSlogan": "Beheers Jiu-Jitsu, Muay Thai, Kickboxing, Boksen en Zelfverdediging voor elke leeftijd en niveau.",
   "shop": "Online winkel",
@@ -55,7 +55,7 @@
   "mmaActivity": "Specifieke MMA",
   "weights": "Krachttraining (geen les)",
   "muayThaiActivity": "Kickboxing / Muay Thai",
-  "kidsBJJ6": "Kinder-BJJ leeftijd 6-8",
+  "kidsBJJ6": "Kinder-BJJ leeftijd 6-14",
   "kidsBJJ9": "Kinder-BJJ leeftijd 9-14",
   "kidsKickboxing": "Kinder Kickboxing leeftijd 6-14",
   "kidsWrestling": "Kinder Worstelen leeftijd 9-14",
@@ -84,10 +84,12 @@
   "cookiePolicyText": "Dit is het cookiebeleid voor The Base Javea. We gebruiken cookies om je ervaring van onze website te helpen verbeteren. Dit beleid legt uit hoe we cookies gebruiken en welke keuzes je hebt.",
   "introductionTitle": "Welkom bij The Base",
   "introduction": "Of je nu een <strong>complete beginner</strong> bent of een <strong>ervaren martial artist</strong>…<br> Of je nu wilt <strong>leren jezelf te verdedigen, nieuwe vrienden maken in een verwelkomende gemeenschap, in vorm komen en afvallen</strong>, of zelfs <strong>een professionele carrière beginnen — The Base is voor jou.</strong> <br><br>We hebben studenten van <strong>alle leeftijden</strong> —  Iedereen traint samen met <strong>respect en doelgerichtheid.</strong> <br><br>Bij The Base is er <strong>geen ego, geen rivaliteit tussen studenten</strong>, en <strong>geen stress.</strong> <br>Dit is jouw ruimte. Je zult je hier thuis voelen ",
-  "kidsClassesExpanded": "🧒 Braziliaans Jiu-Jitsu & Kickboxing voor Kinderen",
+  "kidsClassesExpanded": "🧒 Braziliaans Jiu-Jitsu & Kickboxing voor Kinderen -> Start 15 September",
   "kidsClassesDescriptionExpanded": "Bij The Base zijn onze kinderprogramma's in <strong>Braziliaans Jiu-Jitsu en Kickboxing</strong> ontworpen om de <strong>fysieke en mentale ontwikkeling</strong> van je kind te ondersteunen in een leuke, gestructureerde en veilige omgeving.<br><br>Door martial arts leren kinderen essentiële waarden: <strong>respect, discipline, nederigheid, moed en focus</strong>. Ze bouwen <strong>zelfvertrouwen</strong> op en leren <strong>zichzelf te verdedigen</strong> — niet met agressie, maar met kalme kracht en zelfbeheersing. We leren ze om <strong>zichzelf te beschermen</strong>, <strong>anderen te respecteren</strong>, <strong>nooit te pesten</strong>, en <strong>nooit gepest te laten worden</strong>.<br><br>Of je kind nu verlegen, energiek, atletisch of nieuw in sport is, ze zullen hier hun plek vinden.<br><br>Bij The Base wordt elk kind ondersteund — er is <strong>geen druk</strong>, alleen <strong>groei, begeleiding en teamgeest</strong>.",
   "bjjExpanded": "🥋 Braziliaans Jiu-Jitsu",
   "bjjDescriptionExpanded": "Bij The Base Jávea heeft onze Jiu-Jitsu zijn wortels in de Rickson Gracie lijn en is gebouwd rond <strong>grondcontrole, positionele dominantie en intelligent gebruik van hefboomwerking</strong>. Of het nu in Gi of NoGi is, we richten ons erop je te helpen kalm, efficiënt en effectief te blijven op de grond — vooral tegen grotere, sterkere tegenstanders.<br><br>Dit is een <strong>gedetailleerde en verfijnde Jiu-Jitsu</strong>, ontworpen voor zelfverdediging in het echte leven maar ook zeer effectief in sport en MMA. We benadrukken <strong>verbinding, timing en gewichtsverdeling</strong>, waardoor de kunst toegankelijk maar ongelooflijk diep wordt.<br><br>Door de jaren heen hebben we nauw getraind met UFC-legende <strong>Demian Maia</strong>, en onze stijl weerspiegelt dat — een mix van <strong>straatzelfverdediging, pure BJJ en MMA-toepasbaarheid</strong>.<br>We leggen ook een sterke nadruk op <strong>Judo en Worstel fundamenten</strong>, zodat onze studenten zich comfortabel voelen om het gevecht naar de grond te brengen wanneer nodig.",
   "kickboxingExpanded": "🥊 Kickboxing / Muay Thai",
-  "kickboxingDescriptionExpanded": "Ons Kickboxing en Muay Thai programma combineert <strong>technische excellentie, fysieke conditioning</strong> en een <strong>verwelkomende, motiverende sfeer</strong>. Lessen zijn ontworpen om zowel effectief te zijn voor <strong>zelfverdediging</strong> als volledig toepasbaar op <strong>Kickboxing, Muay Thai en MMA</strong>. Of je nu een beginner bent of een ervaren striker, je bent welkom en je wordt met zorg behandeld."
+  "kickboxingDescriptionExpanded": "Ons Kickboxing en Muay Thai programma combineert <strong>technische excellentie, fysieke conditioning</strong> en een <strong>verwelkomende, motiverende sfeer</strong>. Lessen zijn ontworpen om zowel effectief te zijn voor <strong>zelfverdediging</strong> als volledig toepasbaar op <strong>Kickboxing, Muay Thai en MMA</strong>. Of je nu een beginner bent of een ervaren striker, je bent welkom en je wordt met zorg behandeld.",
+  "kidsPrices": "🧒 Kinderprijzen",
+  "kidsPricesDescription": "Ons kinderprogramma is open voor alle leeftijden, van 6 tot 14 jaar. Het kinderprogramma loopt in 2 semesters, van 15 september tot 31 januari en van 1 februari tot 30 juni. Het kinderprogramma is open voor alle leeftijden, van 6 tot 14 jaar en natuurlijk kun je op elk moment van het jaar beginnen."
 }
