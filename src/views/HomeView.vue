@@ -59,7 +59,7 @@ const lang = useLanguageStore()
       <MultiImageHeroCard
         id="mma"
         :button="lang.languageFile.contactUsButton"
-        :images="['/activities/kickboxing.jpg', '/activities/kickboxing.png', '/kickboxing2.jpg']"
+        :images="['/activities/kickboxing.jpg', '/bags.jpg', '/kickboxing2.jpg']"
         :leader="true"
         :title="lang.languageFile.kickboxingExpanded"
         :left="false"
