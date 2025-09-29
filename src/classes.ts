@@ -5,9 +5,9 @@ export const classes = (lang: Object) => [
     day: lang.monday,
     classes: [
       {
-        name: lang.fitBoxing,
-        time: '09:30 - 10:30',
-        color: 'class-purple'
+        name: lang.private,
+        time: '00:00 - 00:00',
+        color: '#B8B8B8'
       },
       {
         name: lang.private,
@@ -140,9 +140,9 @@ export const classes = (lang: Object) => [
     day: lang.thursday,
     classes: [
       {
-        name: lang.fitBoxing,
+        name: lang.muayThaiActivity,
         time: '09:30 - 10:30',
-        color: 'class-purple'
+        color: 'class-blue'
       },
       {
         name: lang.private,
@@ -186,9 +186,9 @@ export const classes = (lang: Object) => [
     day: lang.friday,
     classes: [
       {
-        name: lang.muayThaiActivity,
-        time: '09:30 - 10:30',
-        color: 'class-blue'
+        name: lang.private,
+        time: '00:00 - 00:00',
+        color: '#B8B8B8'
       },
       {
         name: lang.private,

@@ -29,10 +29,10 @@ export const activities: Array<Activity> = [
     name: 'muayThai',
     description: 'muayThaiDescription',
     image: '/activities/kickboxing.jpg'
-  },
-  {
-    name: 'fitBoxing',
-    description: 'fitBoxingDescription',
-    image: '/activities/fitboxing.jpg'
   }
+  // {
+  //   name: 'fitBoxing',
+  //   description: 'fitBoxingDescription',
+  //   image: '/activities/fitboxing.jpg'
+  // }
 ]
