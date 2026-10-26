@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useLanguageStore } from '../../stores/languageStore'
 import MainCard from './MainCard.vue'
+import AffiliationBadge from '../AffiliationBadge.vue'
 
 const language = useLanguageStore()
 
@@ -35,6 +36,9 @@ function focusInput(link: string) {
           src="/overlay.png"
           alt=""
           class="absolute top-0 left-0 w-full h-[400px] md:h-[600px] xl:h-[750px] opacity-50"
+        />
+        <AffiliationBadge
+          class="hidden lg:flex absolute top-[20px] right-[20px] max-w-[340px] p-[12px] bg-core-darkest/70"
         />
       </div>
       <div

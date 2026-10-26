@@ -8,6 +8,7 @@ import TimeTable from '../components/TimeTable/TimeTable.vue'
 import SectionTitle from '../components/SectionTitle.vue'
 import { useLanguageStore } from '../stores/languageStore'
 import MultiImageHeroCard from '../components/MultiImageHeroCard.vue'
+import AffiliationSection from '../components/Home/AffiliationSection.vue'
 
 const lang = useLanguageStore()
 </script>
@@ -56,6 +57,7 @@ const lang = useLanguageStore()
         :left="true"
         :description="lang.languageFile.bjjDescriptionExpanded"
       />
+      <AffiliationSection id="egjjf" />
       <MultiImageHeroCard
         id="mma"
         :button="lang.languageFile.contactUsButton"
