@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useLanguageStore } from '../stores/languageStore'
 import { usePolicyModalStore } from '../stores/policyModalStore'
+import AffiliationBadge from './AffiliationBadge.vue'
 
 const menuItems = [
   { name: 'Home', link: 'home' },
@@ -88,6 +89,7 @@ function goToCookiePolicy() {
         <div class="mb-4 md:mb-0">
           <p>&copy; {{ new Date().getFullYear() }} The Base Javea. All rights reserved.</p>
         </div>
+        <AffiliationBadge class="mb-4 md:mb-0 max-w-[400px]" />
         <div class="flex space-x-6">
           <span @click="goToPrivacyPolicy" class="cursor-pointer hover:text-accent-1">
             {{ languageStore.languageFile.privacyPolicyTitle }}

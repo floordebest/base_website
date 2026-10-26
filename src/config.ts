@@ -1,3 +1,5 @@
+export const EGJJF_URL = 'https://www.egjjf.com/'
+
 export interface Activity {
   name: string
   description: string
